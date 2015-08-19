@@ -1,0 +1,826 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Untitled Document.md</title><style>@import url(http://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.2.0/katex.min.css);code{color:#c7254e;background-color:#f9f2f4;border-radius:4px}code,kbd{padding:2px 4px}kbd{color:#fff;background-color:#333;border-radius:3px;box-shadow:inset 0 -1px 0 rgba(0,0,0,.25)}kbd kbd{padding:0;font-size:100%;box-shadow:none}pre{display:block;margin:0 0 10px;word-break:break-all;word-wrap:break-word;color:#333;background-color:#f5f5f5;border:1px solid #ccc;border-radius:4px}pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;background-color:transparent;border-radius:0}.pre-scrollable{max-height:340px;overflow-y:scroll}fieldset{border:0;min-width:0}legend{display:block;width:100%;margin-bottom:20px;font-size:21px;line-height:inherit;color:#333;border-bottom:1px solid #e5e5e5}label{display:inline-block;max-width:100%;margin-bottom:5px;font-weight:700}input[type="radio"],input[type="checkbox"]{margin:1px 0 0;line-height:normal}input[type="file"]{display:block}input[type="range"]{display:block;width:100%}select[multiple],select[size]{height:auto}input[type="file"]:focus,input[type="radio"]:focus,input[type="checkbox"]:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}output{padding-top:7px}output,.form-control{display:block;font-size:14px;line-height:1.4285714;color:#555}.form-control{width:100%;height:34px;padding:6px 12px;background-color:#fff;background-image:none;border:1px solid #ccc;border-radius:4px;box-shadow:inset 0 1px 1px rgba(0,0,0,.075);-webkit-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s}.form-control:focus{border-color:#66afe9;outline:0;box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)}.form-control::-moz-placeholder{color:#777;opacity:1}.form-control:-ms-input-placeholder{color:#777}.form-control::-webkit-input-placeholder{color:#777}.form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control{cursor:not-allowed;background-color:#eee;opacity:1}textarea.form-control{height:auto}input[type="date"],input[type="time"],input[type="datetime-local"],input[type="month"]{line-height:34px;line-height:1.4285714 \0}input[type="date"].input-sm,.form-horizontal .form-group-sm input[type="date"].form-control,.input-group-sm>input[type="date"].form-control,.input-group-sm>input[type="date"].input-group-addon,.input-group-sm>.input-group-btn>input[type="date"].btn,input[type="time"].input-sm,.form-horizontal .form-group-sm input[type="time"].form-control,.input-group-sm>input[type="time"].form-control,.input-group-sm>input[type="time"].input-group-addon,.input-group-sm>.input-group-btn>input[type="time"].btn,input[type="datetime-local"].input-sm,.form-horizontal .form-group-sm input[type="datetime-local"].form-control,.input-group-sm>input[type="datetime-local"].form-control,.input-group-sm>input[type="datetime-local"].input-group-addon,.input-group-sm>.input-group-btn>input[type="datetime-local"].btn,input[type="month"].input-sm,.form-horizontal .form-group-sm input[type="month"].form-control,.input-group-sm>input[type="month"].form-control,.input-group-sm>input[type="month"].input-group-addon,.input-group-sm>.input-group-btn>input[type="month"].btn{line-height:30px}input[type="date"].input-lg,.form-horizontal .form-group-lg input[type="date"].form-control,.input-group-lg>input[type="date"].form-control,.input-group-lg>input[type="date"].input-group-addon,.input-group-lg>.input-group-btn>input[type="date"].btn,input[type="time"].input-lg,.form-horizontal .form-group-lg input[type="time"].form-control,.input-group-lg>input[type="time"].form-control,.input-group-lg>input[type="time"].input-group-addon,.input-group-lg>.input-group-btn>input[type="time"].btn,input[type="datetime-local"].input-lg,.form-horizontal .form-group-lg input[type="datetime-local"].form-control,.input-group-lg>input[type="datetime-local"].form-control,.input-group-lg>input[type="datetime-local"].input-group-addon,.input-group-lg>.input-group-btn>input[type="datetime-local"].btn,input[type="month"].input-lg,.form-horizontal .form-group-lg input[type="month"].form-control,.input-group-lg>input[type="month"].form-control,.input-group-lg>input[type="month"].input-group-addon,.input-group-lg>.input-group-btn>input[type="month"].btn{line-height:46px}.form-group{margin-bottom:15px}.radio,.checkbox{position:relative;display:block;min-height:20px;margin-top:10px;margin-bottom:10px}.radio label,.checkbox label{padding-left:20px;margin-bottom:0;font-weight:400;cursor:pointer}.radio input[type="radio"],.radio-inline input[type="radio"],.checkbox input[type="checkbox"],.checkbox-inline input[type="checkbox"]{position:absolute;margin-left:-20px;margin-top:4px \9}.radio+.radio,.checkbox+.checkbox{margin-top:-5px}.radio-inline,.checkbox-inline{display:inline-block;padding-left:20px;margin-bottom:0;vertical-align:middle;font-weight:400;cursor:pointer}.radio-inline+.radio-inline,.checkbox-inline+.checkbox-inline{margin-top:0;margin-left:10px}input[type="radio"][disabled],input[type="radio"].disabled,fieldset[disabled] input[type="radio"],input[type="checkbox"][disabled],input[type="checkbox"].disabled,fieldset[disabled] input[type="checkbox"],.radio-inline.disabled,fieldset[disabled] .radio-inline,.checkbox-inline.disabled,fieldset[disabled] .checkbox-inline,.radio.disabled label,fieldset[disabled] .radio label,.checkbox.disabled label,fieldset[disabled] .checkbox label{cursor:not-allowed}.form-control-static{padding-top:7px;padding-bottom:7px;margin-bottom:0}.form-control-static.input-lg,.form-horizontal .form-group-lg .form-control-static.form-control,.input-group-lg>.form-control-static.form-control,.input-group-lg>.form-control-static.input-group-addon,.input-group-lg>.input-group-btn>.form-control-static.btn,.form-control-static.input-sm,.form-horizontal .form-group-sm .form-control-static.form-control,.input-group-sm>.form-control-static.form-control,.input-group-sm>.form-control-static.input-group-addon,.input-group-sm>.input-group-btn>.form-control-static.btn{padding-left:0;padding-right:0}.input-sm,.form-horizontal .form-group-sm .form-control,.input-group-sm>.form-control{height:30px;padding:5px 10px;font-size:12px;line-height:1.5;border-radius:3px}.input-group-sm>.input-group-addon{height:30px;line-height:1.5}.input-group-sm>.input-group-btn>.btn{height:30px;padding:5px 10px;font-size:12px;line-height:1.5;border-radius:3px}select.input-sm,.form-horizontal .form-group-sm select.form-control,.input-group-sm>select.form-control,.input-group-sm>select.input-group-addon,.input-group-sm>.input-group-btn>select.btn{height:30px;line-height:30px}textarea.input-sm,.form-horizontal .form-group-sm textarea.form-control,.input-group-sm>textarea.form-control,.input-group-sm>textarea.input-group-addon,.input-group-sm>.input-group-btn>textarea.btn,select[multiple].input-sm,.form-horizontal .form-group-sm select[multiple].form-control,.input-group-sm>select[multiple].form-control,.input-group-sm>select[multiple].input-group-addon,.input-group-sm>.input-group-btn>select[multiple].btn{height:auto}.input-lg,.form-horizontal .form-group-lg .form-control,.input-group-lg>.form-control{height:46px;padding:10px 16px;font-size:18px;line-height:1.33;border-radius:6px}.input-group-lg>.input-group-addon{height:46px;line-height:1.33}.input-group-lg>.input-group-btn>.btn{height:46px;padding:10px 16px;font-size:18px;line-height:1.33;border-radius:6px}select.input-lg,.form-horizontal .form-group-lg select.form-control,.input-group-lg>select.form-control,.input-group-lg>select.input-group-addon,.input-group-lg>.input-group-btn>select.btn{height:46px;line-height:46px}textarea.input-lg,.form-horizontal .form-group-lg textarea.form-control,.input-group-lg>textarea.form-control,.input-group-lg>textarea.input-group-addon,.input-group-lg>.input-group-btn>textarea.btn,select[multiple].input-lg,.form-horizontal .form-group-lg select[multiple].form-control,.input-group-lg>select[multiple].form-control,.input-group-lg>select[multiple].input-group-addon,.input-group-lg>.input-group-btn>select[multiple].btn{height:auto}.has-feedback{position:relative}.has-feedback .form-control{padding-right:42.5px}.form-control-feedback{position:absolute;top:25px;right:0;z-index:2;display:block;width:34px;height:34px;line-height:34px;text-align:center}.input-lg+.form-control-feedback,.input-lg+.form-horizontal .form-group-lg .form-control,.form-horizontal .form-group-lg .input-lg+.form-control,.input-lg+.input-group-lg>.form-control,.input-group-lg>.input-lg+.form-control,.input-lg+.input-group-lg>.input-group-addon,.input-group-lg>.input-lg+.input-group-addon,.input-lg+.input-group-lg>.input-group-btn>.btn,.input-group-lg>.input-group-btn>.input-lg+.btn{width:46px;height:46px;line-height:46px}.input-sm+.form-control-feedback,.input-sm+.form-horizontal .form-group-sm .form-control,.form-horizontal .form-group-sm .input-sm+.form-control,.input-sm+.input-group-sm>.form-control,.input-group-sm>.input-sm+.form-control,.input-sm+.input-group-sm>.input-group-addon,.input-group-sm>.input-sm+.input-group-addon,.input-sm+.input-group-sm>.input-group-btn>.btn,.input-group-sm>.input-group-btn>.input-sm+.btn{width:30px;height:30px;line-height:30px}.has-success .help-block,.has-success .control-label,.has-success .radio,.has-success .checkbox,.has-success .radio-inline,.has-success .checkbox-inline{color:#3c763d}.has-success .form-control{border-color:#3c763d;box-shadow:inset 0 1px 1px rgba(0,0,0,.075)}.has-success .form-control:focus{border-color:#2b542b;box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #67b168}.has-success .input-group-addon{color:#3c763d;border-color:#3c763d;background-color:#dff0d8}.has-success .form-control-feedback{color:#3c763d}.has-warning .help-block,.has-warning .control-label,.has-warning .radio,.has-warning .checkbox,.has-warning .radio-inline,.has-warning .checkbox-inline{color:#8a6d3b}.has-warning .form-control{border-color:#8a6d3b;box-shadow:inset 0 1px 1px rgba(0,0,0,.075)}.has-warning .form-control:focus{border-color:#66502c;box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #c09f6b}.has-warning .input-group-addon{color:#8a6d3b;border-color:#8a6d3b;background-color:#fcf8e3}.has-warning .form-control-feedback{color:#8a6d3b}.has-error .help-block,.has-error .control-label,.has-error .radio,.has-error .checkbox,.has-error .radio-inline,.has-error .checkbox-inline{color:#a94442}.has-error .form-control{border-color:#a94442;box-shadow:inset 0 1px 1px rgba(0,0,0,.075)}.has-error .form-control:focus{border-color:#843534;box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483}.has-error .input-group-addon{color:#a94442;border-color:#a94442;background-color:#f2dede}.has-error .form-control-feedback{color:#a94442}.has-feedback label.sr-only~.form-control-feedback{top:0}.help-block{display:block;margin-top:5px;margin-bottom:10px;color:#737373}.form-horizontal .radio,.form-horizontal .checkbox,.form-horizontal .radio-inline,.form-horizontal .checkbox-inline{margin-top:0;margin-bottom:0;padding-top:7px}.form-horizontal .radio,.form-horizontal .checkbox{min-height:27px}.form-horizontal .form-group{margin-left:-15px;margin-right:-15px}.form-horizontal .form-group:before{content:" ";display:table}.form-horizontal .form-group:after{content:" ";display:table;clear:both}.form-horizontal .has-feedback .form-control-feedback{top:0;right:15px}.btn{display:inline-block;vertical-align:middle;cursor:pointer;background-image:none;border:1px solid transparent;white-space:nowrap;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.btn:focus,.btn:active:focus,.btn.active:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}.btn:hover,.btn:focus{color:#333;text-decoration:none}.btn:active,.btn.active{outline:0;background-image:none;box-shadow:inset 0 3px 5px rgba(0,0,0,.125)}.btn.disabled,.btn[disabled],fieldset[disabled] .btn{cursor:not-allowed;pointer-events:none;opacity:.65;filter:alpha(opacity=65);box-shadow:none}.btn-default{color:#333;background-color:#fff;border-color:#ccc}.btn-default:hover,.btn-default:focus,.btn-default:active,.btn-default.active,.open>.btn-default.dropdown-toggle{color:#333;background-color:#e6e6e6;border-color:#adadad}.btn-default:active,.btn-default.active,.open>.btn-default.dropdown-toggle{background-image:none}.btn-default.disabled,.btn-default.disabled:hover,.btn-default.disabled:focus,.btn-default.disabled:active,.btn-default.disabled.active,.btn-default[disabled],.btn-default[disabled]:hover,.btn-default[disabled]:focus,.btn-default[disabled]:active,.btn-default[disabled].active,fieldset[disabled] .btn-default,fieldset[disabled] .btn-default:hover,fieldset[disabled] .btn-default:focus,fieldset[disabled] .btn-default:active,fieldset[disabled] .btn-default.active{background-color:#fff;border-color:#ccc}.btn-default .badge{color:#fff;background-color:#333}.btn-primary{color:#fff;background-color:#428bca;border-color:#3580bd}.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open>.btn-primary.dropdown-toggle{color:#fff;background-color:#3073a9;border-color:#28608e}.btn-primary:active,.btn-primary.active,.open>.btn-primary.dropdown-toggle{background-image:none}.btn-primary.disabled,.btn-primary.disabled:hover,.btn-primary.disabled:focus,.btn-primary.disabled:active,.btn-primary.disabled.active,.btn-primary[disabled],.btn-primary[disabled]:hover,.btn-primary[disabled]:focus,.btn-primary[disabled]:active,.btn-primary[disabled].active,fieldset[disabled] .btn-primary,fieldset[disabled] .btn-primary:hover,fieldset[disabled] .btn-primary:focus,fieldset[disabled] .btn-primary:active,fieldset[disabled] .btn-primary.active{background-color:#428bca;border-color:#3580bd}.btn-primary .badge{color:#428bca;background-color:#fff}.btn-success{color:#fff;background-color:#5cb85c;border-color:#4eae4c}.btn-success:hover,.btn-success:focus,.btn-success:active,.btn-success.active,.open>.btn-success.dropdown-toggle{color:#fff;background-color:#469d44;border-color:#3b8439}.btn-success:active,.btn-success.active,.open>.btn-success.dropdown-toggle{background-image:none}.btn-success.disabled,.btn-success.disabled:hover,.btn-success.disabled:focus,.btn-success.disabled:active,.btn-success.disabled.active,.btn-success[disabled],.btn-success[disabled]:hover,.btn-success[disabled]:focus,.btn-success[disabled]:active,.btn-success[disabled].active,fieldset[disabled] .btn-success,fieldset[disabled] .btn-success:hover,fieldset[disabled] .btn-success:focus,fieldset[disabled] .btn-success:active,fieldset[disabled] .btn-success.active{background-color:#5cb85c;border-color:#4eae4c}.btn-success .badge{color:#5cb85c;background-color:#fff}.btn-info{color:#fff;background-color:#5bc0de;border-color:#46bada}.btn-info:hover,.btn-info:focus,.btn-info:active,.btn-info.active,.open>.btn-info.dropdown-toggle{color:#fff;background-color:#31b2d5;border-color:#269cbc}.btn-info:active,.btn-info.active,.open>.btn-info.dropdown-toggle{background-image:none}.btn-info.disabled,.btn-info.disabled:hover,.btn-info.disabled:focus,.btn-info.disabled:active,.btn-info.disabled.active,.btn-info[disabled],.btn-info[disabled]:hover,.btn-info[disabled]:focus,.btn-info[disabled]:active,.btn-info[disabled].active,fieldset[disabled] .btn-info,fieldset[disabled] .btn-info:hover,fieldset[disabled] .btn-info:focus,fieldset[disabled] .btn-info:active,fieldset[disabled] .btn-info.active{background-color:#5bc0de;border-color:#46bada}.btn-info .badge{color:#5bc0de;background-color:#fff}.btn-warning{color:#fff;background-color:#f0ad4e;border-color:#eea236}.btn-warning:hover,.btn-warning:focus,.btn-warning:active,.btn-warning.active,.open>.btn-warning.dropdown-toggle{color:#fff;background-color:#ec971f;border-color:#d58112}.btn-warning:active,.btn-warning.active,.open>.btn-warning.dropdown-toggle{background-image:none}.btn-warning.disabled,.btn-warning.disabled:hover,.btn-warning.disabled:focus,.btn-warning.disabled:active,.btn-warning.disabled.active,.btn-warning[disabled],.btn-warning[disabled]:hover,.btn-warning[disabled]:focus,.btn-warning[disabled]:active,.btn-warning[disabled].active,fieldset[disabled] .btn-warning,fieldset[disabled] .btn-warning:hover,fieldset[disabled] .btn-warning:focus,fieldset[disabled] .btn-warning:active,fieldset[disabled] .btn-warning.active{background-color:#f0ad4e;border-color:#eea236}.btn-warning .badge{color:#f0ad4e;background-color:#fff}.btn-danger{color:#fff;background-color:#d9534f;border-color:#d43d3a}.btn-danger:hover,.btn-danger:focus,.btn-danger:active,.btn-danger.active,.open>.btn-danger.dropdown-toggle{color:#fff;background-color:#c92e2c;border-color:#ac2525}.btn-danger:active,.btn-danger.active,.open>.btn-danger.dropdown-toggle{background-image:none}.btn-danger.disabled,.btn-danger.disabled:hover,.btn-danger.disabled:focus,.btn-danger.disabled:active,.btn-danger.disabled.active,.btn-danger[disabled],.btn-danger[disabled]:hover,.btn-danger[disabled]:focus,.btn-danger[disabled]:active,.btn-danger[disabled].active,fieldset[disabled] .btn-danger,fieldset[disabled] .btn-danger:hover,fieldset[disabled] .btn-danger:focus,fieldset[disabled] .btn-danger:active,fieldset[disabled] .btn-danger.active{background-color:#d9534f;border-color:#d43d3a}.btn-danger .badge{color:#d9534f;background-color:#fff}.btn-link{color:#428bca;font-weight:400;cursor:pointer;border-radius:0}.btn-link,.btn-link:active,.btn-link[disabled],fieldset[disabled] .btn-link{background-color:transparent;box-shadow:none}.btn-link,.btn-link:hover,.btn-link:focus,.btn-link:active{border-color:transparent}.btn-link:hover,.btn-link:focus{color:#2a6596;text-decoration:underline;background-color:transparent}.btn-link[disabled]:hover,.btn-link[disabled]:focus,fieldset[disabled] .btn-link:hover,fieldset[disabled] .btn-link:focus{color:#777;text-decoration:none}.btn-lg{padding:10px 16px;font-size:18px;line-height:1.33;border-radius:6px}.btn-sm{padding:5px 10px}.btn-sm,.btn-xs{font-size:12px;line-height:1.5;border-radius:3px}.btn-xs{padding:1px 5px}.btn-block{display:block;width:100%}.btn-block+.btn-block{margin-top:5px}input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"].btn-block{width:100%}.fade{opacity:0;-webkit-transition:opacity .15s linear;transition:opacity .15s linear}.fade.in{opacity:1}.collapse{display:none}.collapse.in{display:block}tr.collapse.in{display:table-row}tbody.collapse.in{display:table-row-group}.collapsing{position:relative;height:0;overflow:hidden;-webkit-transition:height .35s ease;transition:height .35s ease}.input-group{position:relative;display:table;border-collapse:separate}.input-group[class*="col-"]{float:none;padding-left:0;padding-right:0}.input-group .form-control{position:relative;z-index:2;float:left;width:100%;margin-bottom:0}.input-group-addon,.input-group-btn,.input-group .form-control{display:table-cell}.input-group-addon:not(:first-child):not(:last-child),.input-group-btn:not(:first-child):not(:last-child),.input-group .form-control:not(:first-child):not(:last-child){border-radius:0}.input-group-addon{white-space:nowrap}.input-group-addon,.input-group-btn{width:1%;vertical-align:middle}.input-group-addon{padding:6px 12px;font-size:14px;font-weight:400;line-height:1;color:#555;text-align:center;background-color:#eee;border:1px solid #ccc;border-radius:4px}.input-group-addon.input-sm,.form-horizontal .form-group-sm .input-group-addon.form-control,.input-group-sm>.input-group-addon.form-control,.input-group-sm>.input-group-addon,.input-group-sm>.input-group-btn>.input-group-addon.btn{padding:5px 10px;font-size:12px;border-radius:3px}.input-group-addon.input-lg,.form-horizontal .form-group-lg .input-group-addon.form-control,.input-group-lg>.input-group-addon.form-control,.input-group-lg>.input-group-addon,.input-group-lg>.input-group-btn>.input-group-addon.btn{padding:10px 16px;font-size:18px;border-radius:6px}.input-group-addon input[type="radio"],.input-group-addon input[type="checkbox"]{margin-top:0}.input-group .form-control:first-child,.input-group-addon:first-child,.input-group-btn:first-child>.btn,.input-group-btn:first-child>.btn-group>.btn,.input-group-btn:first-child>.dropdown-toggle,.input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle),.input-group-btn:last-child>.btn-group:not(:last-child)>.btn{border-bottom-right-radius:0;border-top-right-radius:0}.input-group-addon:first-child{border-right:0}.input-group .form-control:last-child,.input-group-addon:last-child,.input-group-btn:last-child>.btn,.input-group-btn:last-child>.btn-group>.btn,.input-group-btn:last-child>.dropdown-toggle,.input-group-btn:first-child>.btn:not(:first-child),.input-group-btn:first-child>.btn-group:not(:first-child)>.btn{border-bottom-left-radius:0;border-top-left-radius:0}.input-group-addon:last-child{border-left:0}.input-group-btn{font-size:0;white-space:nowrap}.input-group-btn,.input-group-btn>.btn{position:relative}.input-group-btn>.btn+.btn{margin-left:-1px}.input-group-btn>.btn:hover,.input-group-btn>.btn:focus,.input-group-btn>.btn:active{z-index:2}.input-group-btn:first-child>.btn,.input-group-btn:first-child>.btn-group{margin-right:-1px}.input-group-btn:last-child>.btn,.input-group-btn:last-child>.btn-group{margin-left:-1px}.pagination{display:inline-block;padding-left:0;margin:20px 0;border-radius:4px}.pagination>li{display:inline}.pagination>li>a,.pagination>li>span{position:relative;float:left;padding:6px 12px;line-height:1.4285714;text-decoration:none;color:#428bca;background-color:#fff;border:1px solid #ddd;margin-left:-1px}.pagination>li:first-child>a,.pagination>li:first-child>span{margin-left:0;border-bottom-left-radius:4px;border-top-left-radius:4px}.pagination>li:last-child>a,.pagination>li:last-child>span{border-bottom-right-radius:4px;border-top-right-radius:4px}.pagination>li>a:hover,.pagination>li>a:focus,.pagination>li>span:hover,.pagination>li>span:focus{color:#2a6596;background-color:#eee;border-color:#ddd}.pagination>.active>a,.pagination>.active>a:hover,.pagination>.active>a:focus,.pagination>.active>span,.pagination>.active>span:hover,.pagination>.active>span:focus{z-index:2;color:#fff;background-color:#428bca;border-color:#428bca;cursor:default}.pagination>.disabled>span,.pagination>.disabled>span:hover,.pagination>.disabled>span:focus,.pagination>.disabled>a,.pagination>.disabled>a:hover,.pagination>.disabled>a:focus{color:#777;background-color:#fff;border-color:#ddd;cursor:not-allowed}.pagination-lg>li>a,.pagination-lg>li>span{padding:10px 16px;font-size:18px}.pagination-lg>li:first-child>a,.pagination-lg>li:first-child>span{border-bottom-left-radius:6px;border-top-left-radius:6px}.pagination-lg>li:last-child>a,.pagination-lg>li:last-child>span{border-bottom-right-radius:6px;border-top-right-radius:6px}.pagination-sm>li>a,.pagination-sm>li>span{padding:5px 10px;font-size:12px}.pagination-sm>li:first-child>a,.pagination-sm>li:first-child>span{border-bottom-left-radius:3px;border-top-left-radius:3px}.pagination-sm>li:last-child>a,.pagination-sm>li:last-child>span{border-bottom-right-radius:3px;border-top-right-radius:3px}.close{float:right;font-size:21px;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.2;filter:alpha(opacity=20)}.close:hover,.close:focus{color:#000;text-decoration:none;cursor:pointer;opacity:.5;filter:alpha(opacity=50)}button.close{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance:none}.modal-open,.modal{overflow:hidden}.modal{display:none;position:fixed;top:0;right:0;bottom:0;left:0;z-index:1050;-webkit-overflow-scrolling:touch;outline:0}.modal.fade .modal-dialog{-webkit-transform:translate3d(0,-25%,0);transform:translate3d(0,-25%,0);-webkit-transition:-webkit-transform .3s ease-out;transition:transform .3s ease-out}.modal.in .modal-dialog{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.modal-open .modal{overflow-x:hidden;overflow-y:auto}.modal-dialog{position:relative;width:auto;margin:10px}.modal-content{position:relative;background-color:#fff;border:1px solid #999;border:1px solid rgba(0,0,0,.2);border-radius:6px;box-shadow:0 3px 9px rgba(0,0,0,.5);background-clip:padding-box;outline:0}.modal-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;background-color:#000}.modal-backdrop.fade{opacity:0;filter:alpha(opacity=0)}.modal-backdrop.in{opacity:.5;filter:alpha(opacity=50)}.modal-header{padding:15px;border-bottom:1px solid #e5e5e5;min-height:16.4285714px}.modal-header .close{margin-top:-2px}.modal-title{margin:0;line-height:1.4285714}.modal-body{position:relative;padding:15px}.modal-footer{padding:15px;text-align:right;border-top:1px solid #e5e5e5}.modal-footer:before,.modal-footer:after{content:" ";display:table}.modal-footer:after{clear:both}.modal-footer .btn+.btn{margin-left:5px;margin-bottom:0}.modal-footer .btn-group .btn+.btn{margin-left:-1px}.modal-footer .btn-block+.btn-block{margin-left:0}.modal-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right!important}.pull-left{float:left!important}.hide{display:none!important}.show{display:block!important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none!important;visibility:hidden!important}.affix{position:fixed;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.hljs{display:block;overflow-x:auto;padding:.5em;background:#002b36;color:#839496;-webkit-text-size-adjust:none}.hljs-comment,.hljs-template_comment,.diff .hljs-header,.hljs-doctype,.hljs-pi,.lisp .hljs-string,.hljs-javadoc{color:#586e75}.hljs-keyword,.hljs-winutils,.method,.hljs-addition,.css .hljs-tag,.hljs-request,.hljs-status,.nginx .hljs-title{color:#859900}.hljs-number,.hljs-command,.hljs-string,.hljs-tag .hljs-value,.hljs-rules .hljs-value,.hljs-phpdoc,.hljs-dartdoc,.tex .hljs-formula,.hljs-regexp,.hljs-hexcolor,.hljs-link_url{color:#2aa198}.hljs-title,.hljs-localvars,.hljs-chunk,.hljs-decorator,.hljs-built_in,.hljs-identifier,.vhdl .hljs-literal,.hljs-id,.css .hljs-function{color:#268bd2}.hljs-attribute,.hljs-variable,.lisp .hljs-body,.smalltalk .hljs-number,.hljs-constant,.hljs-class .hljs-title,.hljs-parent,.hljs-type,.hljs-link_reference{color:#b58900}.hljs-preprocessor,.hljs-preprocessor .hljs-keyword,.hljs-pragma,.hljs-shebang,.hljs-symbol,.hljs-symbol .hljs-string,.diff .hljs-change,.hljs-special,.hljs-attr_selector,.hljs-subst,.hljs-cdata,.css .hljs-pseudo,.hljs-header{color:#cb4b16}.hljs-deletion,.hljs-important{color:#dc322f}.hljs-link_label{color:#6c71c4}.tex .hljs-formula{background:#073642}*,*:before,*:after{box-sizing:border-box}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}images{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd{font-size:1em}code,kbd,pre,samp{font-family:monospace,monospace}samp{font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}.debug{background-color:#ffc0cb!important}.ellipsis{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ir{background-color:transparent;border:0;overflow:hidden}.ir::before{content:'';display:block;height:150%;width:0}html{font-size:.875em;background:#fafafa;color:#373D49}html,body{font-family:Georgia,Cambria,serif;height:100%}body{font-size:1rem;font-weight:400;line-height:2rem}ul,ol{margin-bottom:.83999rem;padding-top:.16001rem}li{-webkit-font-feature-settings:'kern' 1,'onum' 1,'liga' 1;-moz-font-feature-settings:'kern' 1,'onum' 1,'liga' 1;font-feature-settings:'kern' 1,'onum' 1,'liga' 1;margin-left:1rem}li>ul,li>ol{margin-bottom:0}p{padding-top:.66001rem;-webkit-font-feature-settings:'kern' 1,'onum' 1,'liga' 1;-moz-font-feature-settings:'kern' 1,'onum' 1,'liga' 1;font-feature-settings:'kern' 1,'onum' 1,'liga' 1;margin-top:0}p,pre{margin-bottom:1.33999rem}pre{font-size:1rem;padding:.66001rem 9.5px 9.5px;line-height:2rem;background:-webkit-linear-gradient(top,#fff 0,#fff .75rem,#f5f7fa .75rem,#f5f7fa 2.75rem,#fff 2.75rem,#fff 4rem);background:linear-gradient(to bottom,#fff 0,#fff .75rem,#f5f7fa .75rem,#f5f7fa 2.75rem,#fff 2.75rem,#fff 4rem);background-size:100% 4rem;border-color:#D3DAEA}blockquote{margin:0}blockquote p{font-size:1rem;margin-bottom:.33999rem;font-style:italic;padding:.66001rem 1rem 1rem;border-left:3px solid #A0AABF}th,td{padding:12px}h1,h2,h3,h4,h5,h6{font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-font-feature-settings:'dlig' 1,'liga' 1,'lnum' 1,'kern' 1;-moz-font-feature-settings:'dlig' 1,'liga' 1,'lnum' 1,'kern' 1;font-feature-settings:'dlig' 1,'liga' 1,'lnum' 1,'kern' 1;font-style:normal;font-weight:600;margin-top:0}h1{line-height:3rem;font-size:2.05714rem;margin-bottom:.21999rem;padding-top:.78001rem}h2{font-size:1.95312rem;margin-bottom:.18358rem;padding-top:.81642rem}h2,h3{line-height:3rem}h3{font-size:1.64571rem;margin-bottom:.07599rem;padding-top:.92401rem}h4{font-size:1.5625rem;margin-bottom:.54686rem;padding-top:.45314rem}h5{font-size:1.25rem;margin-bottom:-.56251rem;padding-top:.56251rem}h6{font-size:1rem;margin-bottom:-.65001rem;padding-top:.65001rem}a{cursor:pointer;color:#35D7BB;text-decoration:none}a:hover,a:focus{border-bottom-color:#35D7BB;color:#dff9f4}img{height:auto;max-width:100%}.g{display:block}.g:after{clear:both;content:'';display:table}.g-b{float:left;margin:0;width:100%}.g{margin-left:-16px;margin-right:-16px}.g-b{padding-left:16px;padding-right:16px}.g-b--center{display:block;float:none;margin:0 auto}.g-b--right{float:right}.g-b--1of1{width:100%}.g-b--1of2,.g-b--2of4,.g-b--3of6,.g-b--4of8,.g-b--5of10,.g-b--6of12{width:50%}.g-b--1of3,.g-b--2of6,.g-b--4of12{width:33.333%}.g-b--2of3,.g-b--4of6,.g-b--8of12{width:66.666%}.g-b--1of4,.g-b--2of8,.g-b--3of12{width:25%}.g-b--3of4,.g-b--6of8,.g-b--9of12{width:75%}.g-b--1of5,.g-b--2of10{width:20%}.g-b--2of5,.g-b--4of10{width:40%}.g-b--3of5,.g-b--6of10{width:60%}.g-b--4of5,.g-b--8of10{width:80%}.g-b--1of6,.g-b--2of12{width:16.666%}.g-b--5of6,.g-b--10of12{width:83.333%}.g-b--1of8{width:12.5%}.g-b--3of8{width:37.5%}.g-b--5of8{width:62.5%}.g-b--7of8{width:87.5%}.g-b--1of10{width:10%}.g-b--3of10{width:30%}.g-b--7of10{width:70%}.g-b--9of10{width:90%}.g-b--1of12{width:8.333%}.g-b--5of12{width:41.666%}.g-b--7of12{width:58.333%}.g-b--11of12{width:91.666%}.g-b--push--1of1{margin-left:100%}.g-b--push--1of2,.g-b--push--2of4,.g-b--push--3of6,.g-b--push--4of8,.g-b--push--5of10,.g-b--push--6of12{margin-left:50%}.g-b--push--1of3,.g-b--push--2of6,.g-b--push--4of12{margin-left:33.333%}.g-b--push--2of3,.g-b--push--4of6,.g-b--push--8of12{margin-left:66.666%}.g-b--push--1of4,.g-b--push--2of8,.g-b--push--3of12{margin-left:25%}.g-b--push--3of4,.g-b--push--6of8,.g-b--push--9of12{margin-left:75%}.g-b--push--1of5,.g-b--push--2of10{margin-left:20%}.g-b--push--2of5,.g-b--push--4of10{margin-left:40%}.g-b--push--3of5,.g-b--push--6of10{margin-left:60%}.g-b--push--4of5,.g-b--push--8of10{margin-left:80%}.g-b--push--1of6,.g-b--push--2of12{margin-left:16.666%}.g-b--push--5of6,.g-b--push--10of12{margin-left:83.333%}.g-b--push--1of8{margin-left:12.5%}.g-b--push--3of8{margin-left:37.5%}.g-b--push--5of8{margin-left:62.5%}.g-b--push--7of8{margin-left:87.5%}.g-b--push--1of10{margin-left:10%}.g-b--push--3of10{margin-left:30%}.g-b--push--7of10{margin-left:70%}.g-b--push--9of10{margin-left:90%}.g-b--push--1of12{margin-left:8.333%}.g-b--push--5of12{margin-left:41.666%}.g-b--push--7of12{margin-left:58.333%}.g-b--push--11of12{margin-left:91.666%}.g-b--pull--1of1{margin-right:100%}.g-b--pull--1of2,.g-b--pull--2of4,.g-b--pull--3of6,.g-b--pull--4of8,.g-b--pull--5of10,.g-b--pull--6of12{margin-right:50%}.g-b--pull--1of3,.g-b--pull--2of6,.g-b--pull--4of12{margin-right:33.333%}.g-b--pull--2of3,.g-b--pull--4of6,.g-b--pull--8of12{margin-right:66.666%}.g-b--pull--1of4,.g-b--pull--2of8,.g-b--pull--3of12{margin-right:25%}.g-b--pull--3of4,.g-b--pull--6of8,.g-b--pull--9of12{margin-right:75%}.g-b--pull--1of5,.g-b--pull--2of10{margin-right:20%}.g-b--pull--2of5,.g-b--pull--4of10{margin-right:40%}.g-b--pull--3of5,.g-b--pull--6of10{margin-right:60%}.g-b--pull--4of5,.g-b--pull--8of10{margin-right:80%}.g-b--pull--1of6,.g-b--pull--2of12{margin-right:16.666%}.g-b--pull--5of6,.g-b--pull--10of12{margin-right:83.333%}.g-b--pull--1of8{margin-right:12.5%}.g-b--pull--3of8{margin-right:37.5%}.g-b--pull--5of8{margin-right:62.5%}.g-b--pull--7of8{margin-right:87.5%}.g-b--pull--1of10{margin-right:10%}.g-b--pull--3of10{margin-right:30%}.g-b--pull--7of10{margin-right:70%}.g-b--pull--9of10{margin-right:90%}.g-b--pull--1of12{margin-right:8.333%}.g-b--pull--5of12{margin-right:41.666%}.g-b--pull--7of12{margin-right:58.333%}.g-b--pull--11of12{margin-right:91.666%}.splashscreen{position:fixed;top:0;left:0;width:100%;height:100%;background-color:#373D49;z-index:22}.splashscreen-dillinger{width:260px;height:auto;display:block;margin:0 auto;padding-bottom:3rem}.splashscreen p{font-size:1.25rem;padding-top:.56251rem;font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;text-align:center;max-width:500px;margin:0 auto;color:#FFF}.sp-center{position:relative;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);top:50%}.open-menu>.wrapper{overflow-x:hidden}.page{margin:0 auto;position:relative;top:0;left:0;width:100%;height:100%;z-index:2;-webkit-transition:all .25s ease-in-out;transition:all .25s ease-in-out;background-color:#fff;padding-top:51px;will-change:left}.open-menu .page{left:270px}.title{line-height:1rem;font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem;font-weight:500;color:#A0AABF;letter-spacing:1px;text-transform:uppercase;padding-left:16px;padding-right:16px;margin-top:1rem}.split-preview .title{padding-left:0}.title-document{line-height:1rem;font-size:1.25rem;margin-bottom:.89999rem;padding-top:.10001rem;font-weight:400;font-family:"Ubuntu Mono",Monaco;color:#373D49;padding-left:16px;padding-right:16px;width:80%;min-width:300px;outline:0;border:none}.icon{display:block;margin:0 auto;width:36px;height:36px;border-radius:3px;text-align:center}.icon svg{display:inline-block;margin-left:auto;margin-right:auto}.icon-preview{background-color:#373D49;line-height:40px}.icon-preview svg{width:19px;height:12px}.icon-settings{background-color:#373D49;line-height:44px}.icon-settings svg{width:18px;height:18px}.icon-link{width:16px;height:16px;line-height:1;margin-right:24px;text-align:right}.navbar{background-color:#373D49;height:51px;width:100%;position:fixed;top:0;left:0;z-index:6;-webkit-transition:all .25s ease-in-out;transition:all .25s ease-in-out;will-change:left}.navbar:after{content:"";display:table;clear:both}.open-menu .navbar{left:270px}.navbar-brand{float:left;margin:0 0 0 24px;padding:0;line-height:42px}.navbar-brand svg{width:85px;height:11px}.nav-left{float:left}.nav-right{float:right}.nav-sidebar{width:100%}.menu{list-style:none;margin:0;padding:0}.menu a{border:0;color:#A0AABF;font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;outline:none;text-transform:uppercase}.menu a:hover{color:#35D7BB}.menu .menu-item{border:0;display:none;float:left;margin:0;position:relative}.menu .menu-item>a{display:block;font-size:12px;height:51px;letter-spacing:1px;line-height:51px;padding:0 24px}.menu .menu-item--settings,.menu .menu-item--preview,.menu .menu-item--save-to.in-sidebar,.menu .menu-item--import-from.in-sidebar,.menu .menu-item--link-unlink.in-sidebar,.menu .menu-item--documents.in-sidebar{display:block}.menu .menu-item--documents{padding-bottom:1rem}.menu .menu-item.open>a{background-color:#1D212A}.menu .menu-item-icon>a{height:auto;padding:0}.menu .menu-item-icon:hover>a{background-color:transparent}.menu .menu-link.open i{background-color:#1D212A}.menu .menu-link.open g{fill:#35D7BB}.menu .menu-link-preview,.menu .menu-link-settings{margin-top:8px;width:51px}.menu-sidebar{width:100%}.menu-sidebar .menu-item{float:none;margin-bottom:1px;width:100%}.menu-sidebar .menu-item.open>a{background-color:#373D49}.menu-sidebar .open .caret{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}.menu-sidebar>.menu-item:hover .dropdown a,.menu-sidebar>.menu-item:hover .dropdown .settings{background-color:transparent}.menu-sidebar .menu-link{background-color:#373D49;font-weight:600}.menu-sidebar .menu-link:after{content:"";display:table;clear:both}.menu-sidebar .menu-link>span{float:left}.menu-sidebar .menu-link>.caret{float:right;text-align:right;top:22px}.menu-sidebar .dropdown,.menu-sidebar .settings{background-color:transparent;position:static;width:100%}.dropdown{position:absolute;right:0;top:51px;width:188px}.dropdown,.settings{display:none;background-color:#1D212A}.dropdown{padding:0}.dropdown,.settings,.sidebar-list{list-style:none;margin:0}.sidebar-list{padding:0}.dropdown li,.dropdown .settings,.sidebar-list li{line-height:1;margin:32px 0;padding:0 0 0 32px}.dropdown a,.dropdown .settings,.sidebar-list a{color:#D0D6E2;display:block;text-transform:none}.dropdown a:after,.dropdown .settings,.sidebar-list a:after{content:"";display:table;clear:both}.dropdown .icon,.dropdown .settings,.sidebar-list .icon{float:right}.open .dropdown,.open .settings,.open .sidebar-list{display:block}.open .dropdown.collapse,.open .collapse.settings,.open .sidebar-list.collapse{display:none}.open .dropdown.collapse.in,.open .collapse.in.settings,.open .sidebar-list.collapse.in{display:block}.dropdown .unlinked .icon,.dropdown .unlinked .settings,.sidebar-list .unlinked .icon{opacity:.3}.dropdown.documents li,.dropdown.documents .documents.settings,.sidebar-list.documents li{background-image:url('../img/icons/file.svg');background-position:240px center;background-repeat:no-repeat;background-size:14px 16px;padding:3px 32px}.dropdown.documents li.octocat,.dropdown.documents .documents.settings,.sidebar-list.documents li.octocat{background-image:url('../img/icons/octocat.svg');background-position:234px center;background-size:24px 24px}.dropdown.documents li:last-child,.dropdown.documents .documents.settings,.sidebar-list.documents li:last-child{margin-bottom:1rem}.dropdown.documents li.active a,.dropdown.documents li.active .documents.settings,.sidebar-list.documents li.active a{color:#35D7BB}.settings{position:fixed;top:67px;right:16px;border-radius:3px;width:288px;background-color:#373D49;padding:16px;z-index:7}.show-settings .settings{display:block}.settings .has-checkbox{float:left}.settings a{font-size:1.25rem;font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;-webkit-font-smoothing:antialiased;line-height:28px;color:#D0D6E2}.settings a:after{content:"";display:table;clear:both}.settings a:hover{color:#35D7BB}.settings li{border-bottom:1px solid #4F535B;margin:0;padding:16px 0}.settings li:last-child{border-bottom:none}.brand{border:none;display:block}.brand:hover g{fill:#35D7BB}.toggle{display:block;float:left;height:16px;padding:25px 16px 26px;width:40px}.toggle span:after,.toggle span:before{content:'';left:0;position:absolute;top:-6px}.toggle span:after{top:6px}.toggle span{display:block;position:relative}.toggle span,.toggle span:after,.toggle span:before{-webkit-backface-visibility:hidden;backface-visibility:hidden;background-color:#D3DAEA;height:2px;-webkit-transition:all .3s;transition:all .3s;width:20px}.open-menu .toggle span{background-color:transparent}.open-menu .toggle span:before{-webkit-transform:rotate(45deg)translate(3px,3px);-ms-transform:rotate(45deg)translate(3px,3px);transform:rotate(45deg)translate(3px,3px)}.open-menu .toggle span:after{-webkit-transform:rotate(-45deg)translate(5px,-6px);-ms-transform:rotate(-45deg)translate(5px,-6px);transform:rotate(-45deg)translate(5px,-6px)}.caret{display:inline-block;width:0;height:0;margin-left:6px;vertical-align:middle;position:relative;top:-1px;border-top:4px solid;border-right:4px solid transparent;border-left:4px solid transparent}.sidebar{overflow:auto;height:100%;padding-right:15px;padding-bottom:15px;width:285px}.sidebar-wrapper{-webkit-overflow-scrolling:touch;background-color:#2B2F36;left:0;height:100%;overflow-y:hidden;position:fixed;top:0;width:285px;z-index:1}.sidebar-branding{width:160px;padding:0;margin:16px auto}.header{border-bottom:1px solid #E8E8E8;position:relative}.words{line-height:1rem;font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem;font-weight:500;font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;color:#A0AABF;letter-spacing:1px;text-transform:uppercase;z-index:5;position:absolute;right:16px;top:0}.words span{color:#000}.btn{text-align:center;display:inline-block;width:100%;text-transform:uppercase;font-weight:600;font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;text-shadow:0 1px 0 #1b8b76;padding:16px 24px;background-color:#35D7BB;border-radius:3px;margin:0 auto 16px;line-height:1;color:#fff;-webkit-transition:all .15s linear;transition:all .15s linear;-webkit-font-smoothing:antialiased}.btn--new,.btn--save{display:block;width:238px}.btn--new:hover,.btn--new:focus,.btn--save:hover,.btn--save:focus{color:#fff;border-bottom-color:transparent;box-shadow:0 1px 3px #24b59b;text-shadow:0 1px 0 #24b59b}.btn--save{background-color:#4A5261;text-shadow:0 1px 1px #1e2127}.btn--save:hover,.btn--save:focus{color:#fff;border-bottom-color:transparent;box-shadow:0 1px 5px #08090a;text-shadow:none}.btn--delete{display:block;width:238px;background-color:transparent;font-size:12px;text-shadow:none}.btn--delete:hover,.btn--delete:focus{color:#fff;border-bottom-color:transparent;text-shadow:0 1px 0 #08090a;opacity:.8}.btn--ok,.btn--close{border-top:0;background-color:#4A5261;text-shadow:0 1px 0 #08090a;margin:0}.btn--ok:hover,.btn--ok:focus,.btn--close:hover,.btn--close:focus{color:#fff;background-color:#292d36;text-shadow:none}.overlay{position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(55,61,73,.8);-webkit-transition:all .25s ease-in-out;transition:all .25s ease-in-out;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out;will-change:left,opacity,visibility;z-index:5;opacity:0;visibility:hidden}.show-settings .overlay{visibility:visible;opacity:1}.switch{float:right;line-height:1}.switch input{display:none}.switch small{display:inline-block;cursor:pointer;padding:0 24px 0 0;-webkit-transition:all ease .2s;transition:all ease .2s;background-color:#2B2F36;border-color:#2B2F36}.switch small,.switch small:before{border-radius:30px;box-shadow:inset 0 0 2px 0 #14171F}.switch small:before{display:block;content:'';width:28px;height:28px;background:#fff}.switch.checked small{padding-right:0;padding-left:24px;background-color:#35D7BB;box-shadow:none}.modal--dillinger.about .modal-dialog{font-size:1.25rem;max-width:500px}.modal--dillinger .modal-dialog{max-width:600px;width:auto;margin:5rem auto}.modal--dillinger .modal-content{background:#373D49;border-radius:3px;box-shadow:0 2px 5px 0 #2C3B59;color:#fff;font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;padding:2rem}.modal--dillinger ul{list-style-type:disc;margin:1rem 0;padding:0 0 0 1rem}.modal--dillinger li{padding:0;margin:0}.modal--dillinger .modal-header{border:0;padding:0}.modal--dillinger .modal-body{padding:0}.modal--dillinger .modal-footer{border:0;padding:0}.modal--dillinger .close{color:#fff;opacity:1}.modal-backdrop{background-color:#373D49}.pagination--dillinger{padding:0!important;margin:1.5rem 0!important;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch}.pagination--dillinger,.pagination--dillinger li{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.pagination--dillinger li{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;text-align:center}.pagination--dillinger li:first-child>a,.pagination--dillinger li.disabled>a,.pagination--dillinger li.disabled>a:hover,.pagination--dillinger li.disabled>a:focus,.pagination--dillinger li>a{background-color:transparent;border-color:#4F535B;border-right-color:transparent}.pagination--dillinger li.active>a,.pagination--dillinger li.active>a:hover,.pagination--dillinger li.active>a:focus{border-color:#4A5261;background-color:#4A5261;color:#fff}.pagination--dillinger li>a{float:none;color:#fff;width:100%;display:block;text-align:center;margin:0;border-right-color:transparent;padding:6px}.pagination--dillinger li>a:hover,.pagination--dillinger li>a:focus{border-color:#35D7BB;background-color:#35D7BB;color:#fff}.pagination--dillinger li:last-child a{border-color:#4F535B}.pagination--dillinger li:first-child a{border-right-color:transparent}.diNotify{position:absolute;z-index:9999;left:0;right:0;top:0;margin:0 auto;max-width:400px;text-align:center;-webkit-transition:top .5s ease-in-out,opacity .5s ease-in-out;transition:top .5s ease-in-out,opacity .5s ease-in-out;visibility:hidden}.diNotify-body{-webkit-font-smoothing:antialiased;background-color:#35D7BB;background:#666E7F;border-radius:3px;color:#fff;font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;overflow:hidden;padding:1rem 2rem .5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:baseline;-webkit-align-items:baseline;-ms-flex-align:baseline;align-items:baseline;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}.diNotify-icon{display:block;width:16px;height:16px;line-height:16px;position:relative;top:3px}.diNotify-message{padding-left:1rem}.zen-wrapper{position:fixed;top:0;left:0;right:0;bottom:0;width:100%;height:100%;z-index:10;background-color:#FFF;opacity:0;-webkit-transition:opacity .25s ease-in-out;transition:opacity .25s ease-in-out}.zen-wrapper.on{opacity:1}.enter-zen-mode{background-image:url('../img/icons/enter-zen.svg');right:.5rem;top:.5rem;display:none}.enter-zen-mode,.close-zen-mode{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;background-repeat:no-repeat;width:32px;height:32px;display:block;position:absolute}.close-zen-mode{background-image:url('../img/icons/exit-zen.svg');right:1rem;top:1rem}.zen-page{position:relative;top:0;bottom:0;z-index:11;height:100%;width:100%}#zen{font-size:1.25rem;width:300px;height:80%;margin:0 auto;position:relative;top:10%}#zen:before,#zen:after{content:"";position:absolute;height:10%;width:100%;z-index:12;pointer-events:none}#zen:after{background-image:-webkit-linear-gradient(270deg,rgba(255,255,255,0)0%,#fff 100%);background-image:linear-gradient(-180deg,rgba(255,255,255,0)0%,#fff 100%);bottom:0}.split{overflow:scroll;padding:0!important}.split-editor{padding-left:0;padding-right:0;position:relative}.show-preview .split-editor{display:none}.split-preview{background-color:#fff;display:none;top:0;position:relative;z-index:4}.show-preview .split-preview{display:block}#editor{font-size:1rem;font-family:"Ubuntu Mono",Monaco;font-weight:400;line-height:2rem;width:100%;height:100%}#editor .ace_gutter{-webkit-font-smoothing:antialiased}#preview a{color:#A0AABF;text-decoration:underline}.sr-only{visibility:hidden;text-overflow:110%;overflow:hidden;top:-100px;position:absolute}.mnone{margin:0!important}@media screen and (min-width:27.5em){html{font-size:.875em}body{font-size:1rem}ul,ol{margin-bottom:.83999rem;padding-top:.16001rem}p{padding-top:.66001rem}p,pre{margin-bottom:1.33999rem}pre,blockquote p{font-size:1rem;padding-top:.66001rem}blockquote p{margin-bottom:.33999rem}h1{font-size:2.05714rem;margin-bottom:.21999rem;padding-top:.78001rem}h2{font-size:1.95312rem;margin-bottom:.18358rem;padding-top:.81642rem}h3{font-size:1.64571rem;margin-bottom:.07599rem;padding-top:.92401rem}h4{font-size:1.5625rem;margin-bottom:.54686rem;padding-top:.45314rem}h5{font-size:1.25rem;margin-bottom:-.56251rem;padding-top:.56251rem}h6{font-size:1rem;margin-bottom:-.65001rem;padding-top:.65001rem}.g{margin-left:-16px;margin-right:-16px}.g-b{padding-left:16px;padding-right:16px}.g-b--m1of1{width:100%}.g-b--m1of2,.g-b--m2of4,.g-b--m3of6,.g-b--m4of8,.g-b--m5of10,.g-b--m6of12{width:50%}.g-b--m1of3,.g-b--m2of6,.g-b--m4of12{width:33.333%}.g-b--m2of3,.g-b--m4of6,.g-b--m8of12{width:66.666%}.g-b--m1of4,.g-b--m2of8,.g-b--m3of12{width:25%}.g-b--m3of4,.g-b--m6of8,.g-b--m9of12{width:75%}.g-b--m1of5,.g-b--m2of10{width:20%}.g-b--m2of5,.g-b--m4of10{width:40%}.g-b--m3of5,.g-b--m6of10{width:60%}.g-b--m4of5,.g-b--m8of10{width:80%}.g-b--m1of6,.g-b--m2of12{width:16.666%}.g-b--m5of6,.g-b--m10of12{width:83.333%}.g-b--m1of8{width:12.5%}.g-b--m3of8{width:37.5%}.g-b--m5of8{width:62.5%}.g-b--m7of8{width:87.5%}.g-b--m1of10{width:10%}.g-b--m3of10{width:30%}.g-b--m7of10{width:70%}.g-b--m9of10{width:90%}.g-b--m1of12{width:8.333%}.g-b--m5of12{width:41.666%}.g-b--m7of12{width:58.333%}.g-b--m11of12{width:91.666%}.g-b--push--m1of1{margin-left:100%}.g-b--push--m1of2,.g-b--push--m2of4,.g-b--push--m3of6,.g-b--push--m4of8,.g-b--push--m5of10,.g-b--push--m6of12{margin-left:50%}.g-b--push--m1of3,.g-b--push--m2of6,.g-b--push--m4of12{margin-left:33.333%}.g-b--push--m2of3,.g-b--push--m4of6,.g-b--push--m8of12{margin-left:66.666%}.g-b--push--m1of4,.g-b--push--m2of8,.g-b--push--m3of12{margin-left:25%}.g-b--push--m3of4,.g-b--push--m6of8,.g-b--push--m9of12{margin-left:75%}.g-b--push--m1of5,.g-b--push--m2of10{margin-left:20%}.g-b--push--m2of5,.g-b--push--m4of10{margin-left:40%}.g-b--push--m3of5,.g-b--push--m6of10{margin-left:60%}.g-b--push--m4of5,.g-b--push--m8of10{margin-left:80%}.g-b--push--m1of6,.g-b--push--m2of12{margin-left:16.666%}.g-b--push--m5of6,.g-b--push--m10of12{margin-left:83.333%}.g-b--push--m1of8{margin-left:12.5%}.g-b--push--m3of8{margin-left:37.5%}.g-b--push--m5of8{margin-left:62.5%}.g-b--push--m7of8{margin-left:87.5%}.g-b--push--m1of10{margin-left:10%}.g-b--push--m3of10{margin-left:30%}.g-b--push--m7of10{margin-left:70%}.g-b--push--m9of10{margin-left:90%}.g-b--push--m1of12{margin-left:8.333%}.g-b--push--m5of12{margin-left:41.666%}.g-b--push--m7of12{margin-left:58.333%}.g-b--push--m11of12{margin-left:91.666%}.g-b--pull--m1of1{margin-right:100%}.g-b--pull--m1of2,.g-b--pull--m2of4,.g-b--pull--m3of6,.g-b--pull--m4of8,.g-b--pull--m5of10,.g-b--pull--m6of12{margin-right:50%}.g-b--pull--m1of3,.g-b--pull--m2of6,.g-b--pull--m4of12{margin-right:33.333%}.g-b--pull--m2of3,.g-b--pull--m4of6,.g-b--pull--m8of12{margin-right:66.666%}.g-b--pull--m1of4,.g-b--pull--m2of8,.g-b--pull--m3of12{margin-right:25%}.g-b--pull--m3of4,.g-b--pull--m6of8,.g-b--pull--m9of12{margin-right:75%}.g-b--pull--m1of5,.g-b--pull--m2of10{margin-right:20%}.g-b--pull--m2of5,.g-b--pull--m4of10{margin-right:40%}.g-b--pull--m3of5,.g-b--pull--m6of10{margin-right:60%}.g-b--pull--m4of5,.g-b--pull--m8of10{margin-right:80%}.g-b--pull--m1of6,.g-b--pull--m2of12{margin-right:16.666%}.g-b--pull--m5of6,.g-b--pull--m10of12{margin-right:83.333%}.g-b--pull--m1of8{margin-right:12.5%}.g-b--pull--m3of8{margin-right:37.5%}.g-b--pull--m5of8{margin-right:62.5%}.g-b--pull--m7of8{margin-right:87.5%}.g-b--pull--m1of10{margin-right:10%}.g-b--pull--m3of10{margin-right:30%}.g-b--pull--m7of10{margin-right:70%}.g-b--pull--m9of10{margin-right:90%}.g-b--pull--m1of12{margin-right:8.333%}.g-b--pull--m5of12{margin-right:41.666%}.g-b--pull--m7of12{margin-right:58.333%}.g-b--pull--m11of12{margin-right:91.666%}.splashscreen p{font-size:1.25rem;margin-bottom:1.43749rem;padding-top:.56251rem}.title{font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem}.title-document{margin-bottom:.89999rem;padding-top:.10001rem}.title-document,.settings a{font-size:1.25rem}.words{font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem}.modal--dillinger.about .modal-dialog,#zen{font-size:1.25rem}#zen{width:400px}#editor{font-size:1rem}}@media screen and (min-width:46.25em){html{font-size:.875em}body{font-size:1rem}ul,ol{margin-bottom:.83999rem;padding-top:.16001rem}p{padding-top:.66001rem}p,pre{margin-bottom:1.33999rem}pre,blockquote p{font-size:1rem;padding-top:.66001rem}blockquote p{margin-bottom:.33999rem}h1{font-size:2.05714rem;margin-bottom:.21999rem;padding-top:.78001rem}h2{font-size:1.95312rem;margin-bottom:.18358rem;padding-top:.81642rem}h3{font-size:1.64571rem;margin-bottom:.07599rem;padding-top:.92401rem}h4{font-size:1.5625rem;margin-bottom:.54686rem;padding-top:.45314rem}h5{font-size:1.25rem;margin-bottom:-.56251rem;padding-top:.56251rem}h6{font-size:1rem;margin-bottom:-.65001rem;padding-top:.65001rem}.g{margin-left:-16px;margin-right:-16px}.g-b{padding-left:16px;padding-right:16px}.g-b--t1of1{width:100%}.g-b--t1of2,.g-b--t2of4,.g-b--t3of6,.g-b--t4of8,.g-b--t5of10,.g-b--t6of12{width:50%}.g-b--t1of3,.g-b--t2of6,.g-b--t4of12{width:33.333%}.g-b--t2of3,.g-b--t4of6,.g-b--t8of12{width:66.666%}.g-b--t1of4,.g-b--t2of8,.g-b--t3of12{width:25%}.g-b--t3of4,.g-b--t6of8,.g-b--t9of12{width:75%}.g-b--t1of5,.g-b--t2of10{width:20%}.g-b--t2of5,.g-b--t4of10{width:40%}.g-b--t3of5,.g-b--t6of10{width:60%}.g-b--t4of5,.g-b--t8of10{width:80%}.g-b--t1of6,.g-b--t2of12{width:16.666%}.g-b--t5of6,.g-b--t10of12{width:83.333%}.g-b--t1of8{width:12.5%}.g-b--t3of8{width:37.5%}.g-b--t5of8{width:62.5%}.g-b--t7of8{width:87.5%}.g-b--t1of10{width:10%}.g-b--t3of10{width:30%}.g-b--t7of10{width:70%}.g-b--t9of10{width:90%}.g-b--t1of12{width:8.333%}.g-b--t5of12{width:41.666%}.g-b--t7of12{width:58.333%}.g-b--t11of12{width:91.666%}.g-b--push--t1of1{margin-left:100%}.g-b--push--t1of2,.g-b--push--t2of4,.g-b--push--t3of6,.g-b--push--t4of8,.g-b--push--t5of10,.g-b--push--t6of12{margin-left:50%}.g-b--push--t1of3,.g-b--push--t2of6,.g-b--push--t4of12{margin-left:33.333%}.g-b--push--t2of3,.g-b--push--t4of6,.g-b--push--t8of12{margin-left:66.666%}.g-b--push--t1of4,.g-b--push--t2of8,.g-b--push--t3of12{margin-left:25%}.g-b--push--t3of4,.g-b--push--t6of8,.g-b--push--t9of12{margin-left:75%}.g-b--push--t1of5,.g-b--push--t2of10{margin-left:20%}.g-b--push--t2of5,.g-b--push--t4of10{margin-left:40%}.g-b--push--t3of5,.g-b--push--t6of10{margin-left:60%}.g-b--push--t4of5,.g-b--push--t8of10{margin-left:80%}.g-b--push--t1of6,.g-b--push--t2of12{margin-left:16.666%}.g-b--push--t5of6,.g-b--push--t10of12{margin-left:83.333%}.g-b--push--t1of8{margin-left:12.5%}.g-b--push--t3of8{margin-left:37.5%}.g-b--push--t5of8{margin-left:62.5%}.g-b--push--t7of8{margin-left:87.5%}.g-b--push--t1of10{margin-left:10%}.g-b--push--t3of10{margin-left:30%}.g-b--push--t7of10{margin-left:70%}.g-b--push--t9of10{margin-left:90%}.g-b--push--t1of12{margin-left:8.333%}.g-b--push--t5of12{margin-left:41.666%}.g-b--push--t7of12{margin-left:58.333%}.g-b--push--t11of12{margin-left:91.666%}.g-b--pull--t1of1{margin-right:100%}.g-b--pull--t1of2,.g-b--pull--t2of4,.g-b--pull--t3of6,.g-b--pull--t4of8,.g-b--pull--t5of10,.g-b--pull--t6of12{margin-right:50%}.g-b--pull--t1of3,.g-b--pull--t2of6,.g-b--pull--t4of12{margin-right:33.333%}.g-b--pull--t2of3,.g-b--pull--t4of6,.g-b--pull--t8of12{margin-right:66.666%}.g-b--pull--t1of4,.g-b--pull--t2of8,.g-b--pull--t3of12{margin-right:25%}.g-b--pull--t3of4,.g-b--pull--t6of8,.g-b--pull--t9of12{margin-right:75%}.g-b--pull--t1of5,.g-b--pull--t2of10{margin-right:20%}.g-b--pull--t2of5,.g-b--pull--t4of10{margin-right:40%}.g-b--pull--t3of5,.g-b--pull--t6of10{margin-right:60%}.g-b--pull--t4of5,.g-b--pull--t8of10{margin-right:80%}.g-b--pull--t1of6,.g-b--pull--t2of12{margin-right:16.666%}.g-b--pull--t5of6,.g-b--pull--t10of12{margin-right:83.333%}.g-b--pull--t1of8{margin-right:12.5%}.g-b--pull--t3of8{margin-right:37.5%}.g-b--pull--t5of8{margin-right:62.5%}.g-b--pull--t7of8{margin-right:87.5%}.g-b--pull--t1of10{margin-right:10%}.g-b--pull--t3of10{margin-right:30%}.g-b--pull--t7of10{margin-right:70%}.g-b--pull--t9of10{margin-right:90%}.g-b--pull--t1of12{margin-right:8.333%}.g-b--pull--t5of12{margin-right:41.666%}.g-b--pull--t7of12{margin-right:58.333%}.g-b--pull--t11of12{margin-right:91.666%}.splashscreen-dillinger{width:500px}.splashscreen p{font-size:1.25rem;margin-bottom:1.43749rem;padding-top:.56251rem}.title{font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem}.title-document{font-size:1.25rem;margin-bottom:.89999rem;padding-top:.10001rem}.menu .menu-item--save-to,.menu .menu-item--import-from{display:block}.menu .menu-item--preview,.menu .menu-item--save-to.in-sidebar,.menu .menu-item--import-from.in-sidebar{display:none}.settings a{font-size:1.25rem}.words{font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem}.modal--dillinger.about .modal-dialog{font-size:1.25rem}.enter-zen-mode{display:block}.close-zen-mode{right:3rem;top:3rem}#zen{font-size:1.25rem;width:500px}.split-editor{border-right:1px solid #E8E8E8;float:left;height:calc(100vh - 130px);-webkit-overflow-scrolling:touch;padding-right:16px;width:50%}.show-preview .split-editor{display:block}.split-preview{display:block;float:right;height:calc(100vh - 130px);-webkit-overflow-scrolling:touch;position:relative;top:0;width:50%}#editor{font-size:1rem}}@media screen and (min-width:62.5em){html{font-size:.875em}body{font-size:1rem}ul,ol{margin-bottom:.83999rem;padding-top:.16001rem}p{padding-top:.66001rem}p,pre{margin-bottom:1.33999rem}pre,blockquote p{font-size:1rem;padding-top:.66001rem}blockquote p{margin-bottom:.33999rem}h1{font-size:2.05714rem;margin-bottom:.21999rem;padding-top:.78001rem}h2{font-size:1.95312rem;margin-bottom:.18358rem;padding-top:.81642rem}h3{font-size:1.64571rem;margin-bottom:.07599rem;padding-top:.92401rem}h4{font-size:1.5625rem;margin-bottom:.54686rem;padding-top:.45314rem}h5{font-size:1.25rem;margin-bottom:-.56251rem;padding-top:.56251rem}h6{font-size:1rem;margin-bottom:-.65001rem;padding-top:.65001rem}.g{margin-left:-16px;margin-right:-16px}.g-b{padding-left:16px;padding-right:16px}.g-b--d1of1{width:100%}.g-b--d1of2,.g-b--d2of4,.g-b--d3of6,.g-b--d4of8,.g-b--d5of10,.g-b--d6of12{width:50%}.g-b--d1of3,.g-b--d2of6,.g-b--d4of12{width:33.333%}.g-b--d2of3,.g-b--d4of6,.g-b--d8of12{width:66.666%}.g-b--d1of4,.g-b--d2of8,.g-b--d3of12{width:25%}.g-b--d3of4,.g-b--d6of8,.g-b--d9of12{width:75%}.g-b--d1of5,.g-b--d2of10{width:20%}.g-b--d2of5,.g-b--d4of10{width:40%}.g-b--d3of5,.g-b--d6of10{width:60%}.g-b--d4of5,.g-b--d8of10{width:80%}.g-b--d1of6,.g-b--d2of12{width:16.666%}.g-b--d5of6,.g-b--d10of12{width:83.333%}.g-b--d1of8{width:12.5%}.g-b--d3of8{width:37.5%}.g-b--d5of8{width:62.5%}.g-b--d7of8{width:87.5%}.g-b--d1of10{width:10%}.g-b--d3of10{width:30%}.g-b--d7of10{width:70%}.g-b--d9of10{width:90%}.g-b--d1of12{width:8.333%}.g-b--d5of12{width:41.666%}.g-b--d7of12{width:58.333%}.g-b--d11of12{width:91.666%}.g-b--push--d1of1{margin-left:100%}.g-b--push--d1of2,.g-b--push--d2of4,.g-b--push--d3of6,.g-b--push--d4of8,.g-b--push--d5of10,.g-b--push--d6of12{margin-left:50%}.g-b--push--d1of3,.g-b--push--d2of6,.g-b--push--d4of12{margin-left:33.333%}.g-b--push--d2of3,.g-b--push--d4of6,.g-b--push--d8of12{margin-left:66.666%}.g-b--push--d1of4,.g-b--push--d2of8,.g-b--push--d3of12{margin-left:25%}.g-b--push--d3of4,.g-b--push--d6of8,.g-b--push--d9of12{margin-left:75%}.g-b--push--d1of5,.g-b--push--d2of10{margin-left:20%}.g-b--push--d2of5,.g-b--push--d4of10{margin-left:40%}.g-b--push--d3of5,.g-b--push--d6of10{margin-left:60%}.g-b--push--d4of5,.g-b--push--d8of10{margin-left:80%}.g-b--push--d1of6,.g-b--push--d2of12{margin-left:16.666%}.g-b--push--d5of6,.g-b--push--d10of12{margin-left:83.333%}.g-b--push--d1of8{margin-left:12.5%}.g-b--push--d3of8{margin-left:37.5%}.g-b--push--d5of8{margin-left:62.5%}.g-b--push--d7of8{margin-left:87.5%}.g-b--push--d1of10{margin-left:10%}.g-b--push--d3of10{margin-left:30%}.g-b--push--d7of10{margin-left:70%}.g-b--push--d9of10{margin-left:90%}.g-b--push--d1of12{margin-left:8.333%}.g-b--push--d5of12{margin-left:41.666%}.g-b--push--d7of12{margin-left:58.333%}.g-b--push--d11of12{margin-left:91.666%}.g-b--pull--d1of1{margin-right:100%}.g-b--pull--d1of2,.g-b--pull--d2of4,.g-b--pull--d3of6,.g-b--pull--d4of8,.g-b--pull--d5of10,.g-b--pull--d6of12{margin-right:50%}.g-b--pull--d1of3,.g-b--pull--d2of6,.g-b--pull--d4of12{margin-right:33.333%}.g-b--pull--d2of3,.g-b--pull--d4of6,.g-b--pull--d8of12{margin-right:66.666%}.g-b--pull--d1of4,.g-b--pull--d2of8,.g-b--pull--d3of12{margin-right:25%}.g-b--pull--d3of4,.g-b--pull--d6of8,.g-b--pull--d9of12{margin-right:75%}.g-b--pull--d1of5,.g-b--pull--d2of10{margin-right:20%}.g-b--pull--d2of5,.g-b--pull--d4of10{margin-right:40%}.g-b--pull--d3of5,.g-b--pull--d6of10{margin-right:60%}.g-b--pull--d4of5,.g-b--pull--d8of10{margin-right:80%}.g-b--pull--d1of6,.g-b--pull--d2of12{margin-right:16.666%}.g-b--pull--d5of6,.g-b--pull--d10of12{margin-right:83.333%}.g-b--pull--d1of8{margin-right:12.5%}.g-b--pull--d3of8{margin-right:37.5%}.g-b--pull--d5of8{margin-right:62.5%}.g-b--pull--d7of8{margin-right:87.5%}.g-b--pull--d1of10{margin-right:10%}.g-b--pull--d3of10{margin-right:30%}.g-b--pull--d7of10{margin-right:70%}.g-b--pull--d9of10{margin-right:90%}.g-b--pull--d1of12{margin-right:8.333%}.g-b--pull--d5of12{margin-right:41.666%}.g-b--pull--d7of12{margin-right:58.333%}.g-b--pull--d11of12{margin-right:91.666%}.splashscreen-dillinger{width:700px}.splashscreen p{font-size:1.25rem;margin-bottom:1.43749rem;padding-top:.56251rem}.title{font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem}.title-document{font-size:1.25rem;margin-bottom:.89999rem;padding-top:.10001rem}.menu .menu-item--export-as{display:block}.menu .menu-item--preview{display:none}.settings a{font-size:1.25rem}.words{font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem}.modal--dillinger.about .modal-dialog,#zen{font-size:1.25rem}#zen{width:700px}#editor{font-size:1rem}}@media screen and (min-width:87.5em){html{font-size:.875em}body{font-size:1rem}ul,ol{margin-bottom:.83999rem;padding-top:.16001rem}p{padding-top:.66001rem}p,pre{margin-bottom:1.33999rem}pre,blockquote p{font-size:1rem;padding-top:.66001rem}blockquote p{margin-bottom:.33999rem}h1{font-size:2.05714rem;margin-bottom:.21999rem;padding-top:.78001rem}h2{font-size:1.95312rem;margin-bottom:.18358rem;padding-top:.81642rem}h3{font-size:1.64571rem;margin-bottom:.07599rem;padding-top:.92401rem}h4{font-size:1.5625rem;margin-bottom:.54686rem;padding-top:.45314rem}h5{font-size:1.25rem;margin-bottom:-.56251rem;padding-top:.56251rem}h6{font-size:1rem;margin-bottom:-.65001rem;padding-top:.65001rem}.splashscreen-dillinger{width:800px}.splashscreen p{font-size:1.25rem;margin-bottom:1.43749rem;padding-top:.56251rem}.title{font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem}.title-document{margin-bottom:.89999rem;padding-top:.10001rem}.title-document,.settings a{font-size:1.25rem}.words{font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem}.modal--dillinger.about .modal-dialog,#zen{font-size:1.25rem}#editor{font-size:1rem}}@media (min-width:768px){.form-inline .form-group{display:inline-block;margin-bottom:0;vertical-align:middle}.form-inline .form-control{display:inline-block;width:auto;vertical-align:middle}.form-inline .input-group{display:inline-table;vertical-align:middle}.form-inline .input-group .input-group-addon,.form-inline .input-group .input-group-btn,.form-inline .input-group .form-control{width:auto}.form-inline .input-group>.form-control{width:100%}.form-inline .control-label{margin-bottom:0;vertical-align:middle}.form-inline .radio,.form-inline .checkbox{display:inline-block;margin-top:0;margin-bottom:0;vertical-align:middle}.form-inline .radio label,.form-inline .checkbox label{padding-left:0}.form-inline .radio input[type="radio"],.form-inline .checkbox input[type="checkbox"]{position:relative;margin-left:0}.form-inline .has-feedback .form-control-feedback{top:0}.form-horizontal .control-label{text-align:right;margin-bottom:0;padding-top:7px}.form-horizontal .form-group-lg .control-label{padding-top:14.3px}.form-horizontal .form-group-sm .control-label{padding-top:6px}.modal-dialog{width:600px;margin:30px auto}.modal-content{box-shadow:0 5px 15px rgba(0,0,0,.5)}.modal-sm{width:300px}}@media (min-width:992px){.modal-lg{width:900px}}</style></head><body id="preview">
+<h1><a id="____0"></a>Словарь терминов по фронтенду</h1>
+<p>Оглавление: <a href="#a">A</a> <a href="#b">B</a> <a href="#c">C</a> <a href="#d">D</a> <a href="#e">E</a> <a href="#f">F</a> <a href="#g">G</a> <a href="#h">H</a> <a href="#i">I</a> J <a href="#k">K</a> <a href="#l">L</a> <a href="#m">M</a> <a href="#n">N</a> <a href="#o">O</a> <a href="#p">P</a> <a href="#q">Q</a> <a href="#r">R</a> <a href="#s">S</a> <a href="#t">T</a> <a href="#u">U</a> <a href="#v">V</a> <a href="#w">W</a> X Y Z</p>
+<h2><a id="A_4"></a>A</h2>
+<h3><a id="adaptive_design_6"></a>adaptive design</h3>
+<p><strong>адаптивный дизайн,</strong> подход к дизайну сайтов, учитывающий их адаптацию под различные устройства и условия, противопоставляется распространённому «фиксированному» дизайну только для компьютеров. Один из способов создания адаптивного дизайна — методики <a href="#responsive-design">отзывчивого дизайна</a>.</p>
+<h3><a id="almost_standards_mode_10"></a>almost standards mode</h3>
+<p><strong>почти стандартный режим,</strong> режим интерпретации и отображения страницы браузером, в котором браузер целенаправленно отходит от стандартов (как при <a href="#quirks-mode">режиме совместимости</a>) лишь для отдельных особых случаев, используется для страниц с переходными <a href="#doctype">доктайпами</a> HTML 4 и XHTML 1.</p>
+<h3><a id="anchor_14"></a>anchor</h3>
+<ol>
+<li><strong>ссылка,</strong> гиперссылка между двумя документами.</li>
+<li><strong>якорь,</strong> ссылка на элемент в пределах документа, может быть частью гиперссылки.</li>
+</ol>
+<h3><a id="animation_19"></a>animation</h3>
+<p><strong>анимация,</strong> плавное изменение визуальных параметров объекта.</p>
+<h3><a id="asset_23"></a>asset</h3>
+<p><strong>ресурс,</strong> обычно вспомогательный, как стили и картинки для страницы, напр. <em>site assets — ресурсы сайта.</em></p>
+<h3><a id="assert_27"></a>assert</h3>
+<p><strong>проверка,</strong> условие, которое проверяется, употр. в тестировании, напр. <em>field assert has failed — проверка поля не прошла.</em></p>
+<h3><a id="atkeyword_31"></a>at-keyword</h3>
+<p><strong>ключ директивы,</strong> см. <a href="#at-rule">директива</a></p>
+<h3><a id="atrule_35"></a>at-rule</h3>
+<p><strong>директива,</strong> тип <a href="#statement">объявления</a>, начинающегося со знака <code>@</code>, напр. <em>@import</em>.</p>
+<h3><a id="attribute_39"></a>attribute</h3>
+<p><strong>атрибут,</strong> напр. <code>rel=&quot;stylesheet&quot;</code>.</p>
+<ul>
+<li>attribute name — <strong>название атрибута</strong></li>
+<li>attribute value — <strong>значение атрибута</strong></li>
+</ul>
+<h2><a id="B_46"></a>B</h2>
+<h3><a id="backend_48"></a>back-end</h3>
+<p><strong>бэке́нд</strong></p>
+<ol>
+<li>область веб-технологий, работающих на сервере.</li>
+<li>внутренняя часть серверной системы, занимается обработкой данных.</li>
+</ol>
+<h3><a id="background_55"></a>background</h3>
+<p><strong>фон,</strong> напр. <em>background image — фоновое изображение.</em></p>
+<ul>
+<li>background-color — <strong>цвет фона</strong></li>
+<li>background-position — <strong>позиция фона</strong></li>
+<li>background-size — <strong>размер фона</strong></li>
+<li>background-repeat — <strong>повторение фона</strong></li>
+<li>background-origin — <strong>границы фона</strong></li>
+<li>background-clip — <strong>обрезка фона</strong></li>
+<li>background-attachment — <strong>закрепление фона</strong></li>
+<li>background-image — <strong>фоновое изображение</strong></li>
+</ul>
+<h3><a id="baseline_68"></a>baseline</h3>
+<p><strong>базовая линия,</strong> воображаемая линия в основании букв в строке.</p>
+<h3><a id="blending_mode_72"></a>blending mode</h3>
+<p><strong>режим наложения,</strong> алгоритм смешивания слоёв, применяемый в графических редакторах или прямо в CSS, напр. <em>overlay blending mode — режим наложения перекрытием.</em></p>
+<h3><a id="block_76"></a>block</h3>
+<ol>
+<li><strong>блок деклараций,</strong> структурная часть <a href="#statement">объявления</a>. Заключается в фигурные скобки и содержит декларации свойств (или, в случае медиавыражения, блоки стилей).</li>
+<li><strong>блочный вид,</strong> см. <a href="#display">вид</a></li>
+</ol>
+<h3><a id="blockquote_81"></a>blockquote</h3>
+<p><strong>блочная цитата,</strong> HTML-элемент для выделения цитируемой <em>нестрочной</em> области документа. Может содержать атрибут <code>cite</code> со ссылкой на первоисточник.</p>
+<h3><a id="border_85"></a>border</h3>
+<p><strong>рамка,</strong> внешняя видимая часть блока, напр. <em>border-left — рамка слева.</em></p>
+<ul>
+<li>border-collapse — слияние рамки</li>
+<li>border-color — цвет рамки</li>
+<li>border-image — графическая рамка</li>
+<li>border-image-outset — выступ графической рамки</li>
+<li>border-image-repeat — повторение графической рамки</li>
+<li>border-image-slice — разбивка графической рамки</li>
+<li>border-image-source — адрес изображения для графической рамки</li>
+<li>border-image-width — толщина графической рамки</li>
+<li>border-radius — скругление рамки</li>
+<li>border-style — стиль рамки</li>
+<li>border-width — ширина рамки</li>
+</ul>
+<h3><a id="borderradius_101"></a>border-radius</h3>
+<p><strong>скругление рамки,</strong> напр., <em>border-radius:3px — скругление рамки на 3 пикселя, border-top-left-radius — скругление верхнего левого угла,</em> см. также <a href="#rounder-corners">скруглённые углы</a>.</p>
+<h3><a id="bounding_box_105"></a>bounding box</h3>
+<p><strong>окаймляющий блок</strong></p>
+<h3><a id="box_model_109"></a>box model</h3>
+<p><strong>блочная модель,</strong> система размерностей блока, состоит из содержимого, отступа, рамки и внешнего отступа.</p>
+<h3><a id="boxshadow_113"></a>box-shadow</h3>
+<p><strong>тень (блока),</strong> напр. <em>box-shadow is red — тень блока красная.</em></p>
+<h3><a id="breadcrumbs_117"></a>breadcrumbs</h3>
+<p><strong>хлебные кро́шки,</strong> вспомогательная навигация на сайте, последовательно отражающая структуру или пройденные шаги.</p>
+<h3><a id="breakpoint_121"></a>breakpoint</h3>
+<ol>
+<li><strong>точка останова,</strong> строка в коде, на которой выполнение скрипта приостанавливается для вызова отладчика.</li>
+<li><strong>контрольная точка,</strong> условие, при котором раскладка сайта меняется с одной на другую. Характерно для медиавыражений.</li>
+</ol>
+<h3><a id="browser_126"></a>browser</h3>
+<p><strong>бра́узер</strong></p>
+<h3><a id="button_130"></a>button</h3>
+<p><strong>кнопка</strong></p>
+<ol>
+<li>элемент интерфейса, при нажатии отправляющий форму или производящий иное действие</li>
+<li>элемент формы <code>&lt;button&gt;</code> или <code>&lt;input type=&quot;button&quot;&gt;</code> (также <code>submit</code> и <code>image</code>).</li>
+</ol>
+<h2><a id="C_137"></a>C</h2>
+<h3><a id="callback_139"></a>callback</h3>
+<p><strong>обратный вызов,</strong> исполнение кода по завершению работы функции, напр. <em>pass value in a callback — передай значение в обратном вызове.</em></p>
+<h3><a id="candidate_recommendation_CR_143"></a>candidate recommendation (CR)</h3>
+<p><strong>кандидат в рекомендации,</strong> статус спецификации <a href="#world-wide-web-consortium-w3c">W3C</a>, один из возможных вариантов для <a href="#proposed-recommendation-pr">предложенной рекомендации</a>.</p>
+<h3><a id="cascade_147"></a>cascade</h3>
+<p><strong>каскад,</strong> описанная в спецификации CSS схема, определяющая порядок применения к элементу блоков стилей — в зависимости от их источника, важности, <a href="https://github.com/web-standards-ru/dictionary/blob/master/Dictionary.md#specificity">специфичности</a> и положения в коде. Ошибочно «каскадом» иногда называют <a href="https://github.com/web-standards-ru/dictionary/blob/master/Dictionary.md#selector">селектор потомка</a>.</p>
+<h3><a id="cell_151"></a>cell</h3>
+<p><strong>ячейка</strong></p>
+<ol>
+<li>структурная единица таблицы.</li>
+<li>элемент таблицы <code>&lt;td&gt;</code> или <code>&lt;th&gt;</code>.</li>
+</ol>
+<h3><a id="cellpadding_158"></a>cellpadding</h3>
+<p><strong>отступ в ячейках</strong> таблицы.</p>
+<h3><a id="cellspacing_162"></a>cellspacing</h3>
+<p><strong>расстояние между ячейками</strong> таблицы.</p>
+<h3><a id="character_reference_166"></a>character reference</h3>
+<p><strong>символьная подстановка,</strong> напр. <code>&amp;nbsp;</code>. Допустим также не совсем точный, но более устоявшийся перевод <strong>спецсимвол.</strong></p>
+<h3><a id="checkbox_170"></a>checkbox</h3>
+<p><strong>чекбо́кс</strong></p>
+<ol>
+<li>элемент интерфейса для выбора одного или нескольких вариантов, напр. <em>checkbox is disabled — чекбокс неактивен.</em></li>
+<li>элемент формы <code>&lt;input type=&quot;checkbox&quot;&gt;</code>.</li>
+</ol>
+<h3><a id="child_177"></a>child</h3>
+<p><strong>потомок,</strong> (во мн. ч. children — <strong>потомки</strong>).</p>
+<h3><a id="classitis_181"></a>classitis</h3>
+<p><strong>классянка,</strong> выдуманное заболевание, для которого характерно чрезмерное использование множественных классов: как для оформления, так и для хранения информации.</p>
+<h3><a id="clear_185"></a>clear</h3>
+<p><strong>отмена обтекания,</strong> CSS-свойство, запрещающее блоку обтекать предшествующие плавающие блоки.</p>
+<ul>
+<li>clear:left — <strong>отмена обтекания слева</strong></li>
+<li>clear:right — <strong>отмена обтекания справа</strong></li>
+<li>clear:both — <strong>отмена обтекания с обеих сторон</strong></li>
+</ul>
+<h3><a id="click_193"></a>click</h3>
+<p><strong>клик,</strong> нажатие на объект с помощью курсора мыши или подобного устройства, напр. <em>double click is firing event — двойной клик вызывает событие.</em></p>
+<h3><a id="clientside_197"></a>client-side</h3>
+<p><strong>клиентсайд,</strong> область технологий, работающих в браузере, часто синоним <a href="#front-end">фронтенда</a>.</p>
+<h3><a id="clipping_path_201"></a>clipping path</h3>
+<p><strong>контур обрезки</strong></p>
+<h3><a id="closure_205"></a>closure</h3>
+<p><strong>замыкание,</strong> функция, содержащая в теле ссылки на переменные, объявленные в окружающем коде.</p>
+<h3><a id="code_209"></a>code</h3>
+<ol>
+<li>сущ. <strong>код,</strong> неисчисл. (как сахар), напр. <em>error in code — ошибка в коде,</em> но не <em>ошибка в кодах</em> (неправильно).</li>
+<li>гл. <strong>писать код, верстать, программировать,</strong> напр. <em>to code a site — верстать сайт.</em></li>
+</ol>
+<h3><a id="colspan_214"></a>colspan</h3>
+<p><strong>объединение столбцов,</strong> HTML-атрибут для объединения нескольких ячеек таблицы в одной строке.</p>
+<h3><a id="column_218"></a>column</h3>
+<p><strong>столбец, колонка,</strong> вертикальная область в таблице, раскладке или тексте.</p>
+<h3><a id="color_222"></a>color</h3>
+<p><strong>цвет</strong></p>
+<h3><a id="combinator_226"></a>combinator</h3>
+<p><strong>комбинатор,</strong> специальный символ, использующийся в сложном селекторе для точного указания комбинации DOM-элементов, напр. <code>&gt;</code>, <code>+</code> и др. Пробел между селекторами также считается комбинатором.</p>
+<ul>
+<li>descendant combinator — <strong>комбинатор потомка,</strong> <code></code> (пробел).</li>
+<li>child combinator — <strong>комбинатор непосредственного потомка,</strong> <code>&gt;</code>. Также называется <strong>дочерним</strong>.</li>
+<li>adjacent sibling combinator — <strong>комбинатор непосредственного соседства,</strong> <code>+</code>.</li>
+<li>general sibling combinator — <strong>комбинатор соседства,</strong> <code>~</code>.</li>
+</ul>
+<h3><a id="comment_235"></a>comment</h3>
+<p><strong>комментарий,</strong> пояснение к коду</p>
+<h3><a id="compositing_239"></a>compositing</h3>
+<p><strong>компо́зитинг</strong></p>
+<h3><a id="composite_layer_243"></a>composite layer</h3>
+<p><strong>композитный слой</strong></p>
+<h3><a id="compositor_247"></a>compositor</h3>
+<p><strong>композитор</strong> (в знач. «движок композитинга»)</p>
+<h3><a id="content_251"></a>content</h3>
+<p><strong>содержимое</strong></p>
+<ul>
+<li>metadata content — <strong>метасодержимое</strong></li>
+<li>flow content — <strong>потоковое содержимое</strong></li>
+<li>sectioning content — <strong>структурное содержимое</strong></li>
+<li>heading content — <strong>заголовочное содержимое</strong></li>
+<li>phrasing content — <strong>текстовое содержимое</strong></li>
+<li>embedded content — <strong>внедряемое содержимое</strong></li>
+<li>interactive content — <strong>интерактивное содержимое</strong></li>
+<li>palpable content — <strong>содержимое для вывода</strong></li>
+<li>script-supporting content — <strong>скриптовое содержимое</strong></li>
+<li>grouping content — <strong>группирующее содержимое</strong></li>
+</ul>
+<h3><a id="crossbrowser_266"></a>cross-browser</h3>
+<p><strong>кроссбра́узерный,</strong> работающий во всех браузерах, слитно.</p>
+<h3><a id="crossplatform_270"></a>cross-platform</h3>
+<p><strong>кроссплатфо́рменный,</strong> работающий на всех платформах, слитно.</p>
+<h3><a id="CSS_Working_Group_CSSWG_274"></a>CSS Working Group (CSSWG)</h3>
+<p><strong>Рабочая группа CSS</strong></p>
+<h3><a id="custom_278"></a>custom</h3>
+<p><strong>кастомный</strong> (возм. <strong>пользовательский</strong>)</p>
+<ul>
+<li>custom element — <strong>кастомный элемент</strong>.</li>
+<li>custom attribute — <strong>кастомный атрибут</strong>.</li>
+</ul>
+<h2><a id="D_285"></a>D</h2>
+<h3><a id="data_binding_287"></a>data binding</h3>
+<p><strong>cвязывание данных,</strong> автоматическая синхронизация данных между двумя сущностями, обычно моделью и представлением.</p>
+<h3><a id="declaration_291"></a>declaration</h3>
+<p><strong>декларация,</strong> объявление свойства и значения.</p>
+<h3><a id="deep_comparison_295"></a>deep comparison</h3>
+<p><strong>глубокое сравнение,</strong> сравнение двух объектов, при этом производится сравнение структуры объектов и проверяется равенство примитивов содержащихся внутри объектов.</p>
+<h3><a id="design_299"></a>design</h3>
+<ol>
+<li>сущ. <strong>дизайн,</strong> визуальный облик сайта, может включать принципы взаимодействия и архитектурные решения, напр. <em>new design for a site — новый дизайн для сайта</em>.</li>
+<li>гл. <strong>разрабатывать,</strong> создавать или проектировать внешний вид и функциональность.</li>
+</ol>
+<h3><a id="device_pixel_ratio_304"></a>device pixel ratio</h3>
+<p>см. <a href="#pixel-ratio">pixel ratio</a></p>
+<h3><a id="dirty_checking_308"></a>dirty checking</h3>
+<p><strong>проверка на «грязные» свойства объекта</strong>, то есть [глубокое сравнение](#deep comparison) свойств модели, который приводит к <a href="#callback">обратному вызову</a>, если что-то изменилось.</p>
+<h3><a id="disable_312"></a>disable</h3>
+<p><strong>деактивировать</strong></p>
+<h3><a id="disabled_316"></a>disabled</h3>
+<p><strong>неактивный,</strong> состояние элемента формы, в котором его изменение запрещено, напр. <em>disabled button — неактивная кнопка.</em></p>
+<h3><a id="display_320"></a>display</h3>
+<ol>
+<li>
+<p><strong>вид</strong>, css-свойство, определяющее тип отображения блока.</p>
+<ul>
+<li>display:none — <strong>скрытый вид</strong></li>
+<li>display:block — <strong>блочный вид</strong></li>
+<li>display:inline — <strong>строчный вид</strong></li>
+<li>display:inline-block — <strong>вид строчного блока</strong></li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>display:flex — <strong>вид флекс-контейнера</strong> (см. <a href="#flexbox">flexbox</a>)</li>
+<li>display:inline-flex — <strong>вид строчного флекс-контейнера</strong> (см. <a href="#flexbox">flexbox</a>)</li>
+</ul>
+<ol start="2">
+<li><strong>экран</strong>, напр. <em>экран смартфона, разрешение экрана</em>.</li>
+</ol>
+<h3><a id="divitis_333"></a>divitis</h3>
+<p><strong>диватоз,</strong> выдуманное заболевание, для которого характерно использование только элементов <code>&lt;div&gt;</code> вместо <a href="#semantics">семантически</a> подходящих.</p>
+<h3><a id="DOM_337"></a>DOM</h3>
+<p><strong>объектная модель документа, дом</strong></p>
+<h3><a id="doctype_341"></a>doctype</h3>
+<p><strong>докта́йп,</strong> конструкция вида <code>&lt;DOCTYPE html&gt;</code> в начале документа, которая обозначает используемую версию HTML. Используется браузерами для выбора режима (<a href="#standards-mode-standards-compliance-mode">стандартного</a>, <a href="#almost-standards-mode">почти стандартного</a> или <a href="#quirks-mode">совместимости</a>).</p>
+<h3><a id="dropdown_345"></a>dropdown</h3>
+<p><strong>выпадающее меню,</strong> элемент интерфейса, раскрывающий дополнительную информациию при активации.</p>
+<h2><a id="E_349"></a>E</h2>
+<h3><a id="easing_351"></a>easing</h3>
+<p><strong>плавность, функция плавности,</strong> описывает изменение скорости анимации с помощью ключевых слов или кривых Безье, напр. <em>transition easing is linear — плавность перехода линейная.</em></p>
+<h3><a id="editors_draft_ED_355"></a>editor’s draft (ED)</h3>
+<p><strong>редакторский черновик,</strong> ранний статус спецификации <a href="#world-wide-web-consortium-w3c">W3C</a>, предложенный одним из редакторов. На основании редакторского черновика может быть составлен <a href="#working-draft-wd">рабочий черновик</a>.</p>
+<h3><a id="element_359"></a>element</h3>
+<p><strong>элемент</strong></p>
+<ul>
+<li>void elements — <strong>пустые элементы</strong></li>
+<li>raw text elements — <strong>элементы со свободным текстом</strong></li>
+<li>escapable raw text elements — <strong>элементы с экранируемым свободным текстом</strong></li>
+<li>foreign elements — <strong>сторонние элементы</strong></li>
+<li>normal elements — <strong>обычные элементы</strong></li>
+</ul>
+<h3><a id="em_369"></a>em</h3>
+<p><strong>ем,</strong> единица измерения в CSS, которая зависит от размера шрифта родителя, напр. <em>font-size:3em — размер шрифта 3 ема.</em></p>
+<h3><a id="enable_373"></a>enable</h3>
+<p><strong>активировать</strong></p>
+<h3><a id="enabled_377"></a>enabled</h3>
+<p><strong>активный,</strong> состояние элемента формы, в котором его изменение разрешено, напр. <em>enabled button — активная кнопка.</em></p>
+<h3><a id="engine_381"></a>engine</h3>
+<p><strong>движок,</strong> напр. <em>Safari is based on WebKit engine — Сафари работает на движке Вебкит.</em></p>
+<h2><a id="F_385"></a>F</h2>
+<h3><a id="fallback_387"></a>fallback</h3>
+<p><strong>запасной вариант,</strong> дополнительная реализация на случай отсутствия в браузере нужных возможностей, вроде включённых скриптов или нужных видеокодеков.</p>
+<h3><a id="favicon_391"></a>favicon</h3>
+<p><strong>фавико́нка,</strong> значок сайта, обычно 16×16 пикселей в формате ICO.</p>
+<h3><a id="fieldset_395"></a>fieldset</h3>
+<p><strong>группа полей,</strong> элемент, объединяющий несколько полей формы, напр. <em>green border on a fieldset — зелёная рамка на группе полей.</em></p>
+<h3><a id="figure_399"></a>figure</h3>
+<p><strong>фигура,</strong> элемент из HTML5, содержащий изображение, видео, таблицу, график или фрагмент кода.</p>
+<h3><a id="figcaption_403"></a>figcaption</h3>
+<p><strong>заголовок фигуры,</strong> заглавие или подпись к фигуре.</p>
+<h3><a id="filter_407"></a>filter</h3>
+<p><strong>фильтр</strong></p>
+<ul>
+<li>filter: brightness — <strong>яркость</strong></li>
+<li>filter: contrast — <strong>контрастность</strong></li>
+<li>filter: grayscale — <strong>бесцветность</strong></li>
+<li>filter: sepia — <strong>сепия</strong></li>
+<li>filter: invert — <strong>инверсия</strong></li>
+<li>filter: saturate — <strong>насыщенность</strong></li>
+<li>filter: hue-rotate — <strong>поворот цвета</strong></li>
+<li>filter: blur — <strong>размытость</strong></li>
+<li>filter: opacity — <strong>непрозрачность</strong></li>
+<li>filter: drop-shadow — <strong>тень</strong></li>
+</ul>
+<h3><a id="flexbox_422"></a>flexbox</h3>
+<p><strong>флексбокс,</strong> механизм <a href="#layout">раскладки</a>.</p>
+<ul>
+<li>flex container — <strong>флекс-контейнер</strong></li>
+<li>flex item — <strong>флекс-элемент</strong></li>
+<li>flex-direction — <strong>направление главной оси</strong></li>
+<li>flex-wrap — <strong>перенос флекс-элементов</strong>, определяет, является ли контейнер однострочным или многострочным</li>
+<li>flex-basis — <strong>базовый размер</strong> флекс-элемента по главной оси</li>
+<li>flex-grow — <strong>коэффициент растягивания</strong></li>
+<li>flex-shrink — <strong>коэффициент сжатия</strong></li>
+<li>main axis — <strong>главная ось</strong>, направление, в котором флекс-элементы следуют друг за другом в контейнере</li>
+<li>cross axis — <strong>поперечная ось</strong>, направление, перпендикулярное главной оси</li>
+<li>main size — <strong>главный размер</strong>, размер флекс-элемента по главной оси</li>
+<li>cross size — <strong>поперечный размер</strong>, размер флекс-элемента по поперечной оси</li>
+<li>justify-content — <strong>распределение флекс-элементов</strong> по главной оси</li>
+<li>align-items — <strong>выравнивание флекс-элементов</strong> по поперечной оси</li>
+<li>align-self — <strong>выравнивание флекс-элемента</strong> по поперечной оси</li>
+<li>align-content — <strong>выравнивание строк</strong> контейнера по поперечной оси</li>
+<li>order — <strong>порядковый номер</strong> флекс-элемента</li>
+</ul>
+<h3><a id="float_443"></a>float</h3>
+<ol>
+<li>прил. <strong>плавающий,</strong> свойство блока, заставляющее последующие блоки обтекать его, напр. <em>float layout — раскладка на плавающих блоках.</em></li>
+<li>гл. <strong>обтекать,</strong> следовать вплотную к плавающему блоку, напр. <em>text is floating to the right — текст обтекает справа.</em></li>
+<li>гл. <strong>прижимать,</strong> упираться вправо или влево, обычно из-за плавающих свойств, напр. <em>float block to the left — прижмите блок влево.</em></li>
+</ol>
+<h3><a id="font_449"></a>font</h3>
+<p><strong>шрифт</strong></p>
+<ul>
+<li>
+<p>font-weight — <strong>насыщенность</strong></p>
+<ul>
+<li>font-weight:normal — <strong>нормальная</strong></li>
+<li>font-weight:bold — <strong>полужирная,</strong> (не <em>жирная</em>)</li>
+<li>font-weight:bolder — <strong>жирнее</strong></li>
+<li>font-weight:lighter — <strong>светлее</strong></li>
+</ul>
+</li>
+<li>
+<p>font-style — <strong>стиль шрифта</strong></p>
+<ul>
+<li>font-style:normal — <strong>прямой</strong></li>
+<li>font-style:italic — <strong>курси́в</strong></li>
+<li>font-style:oblique — <strong>наклонный</strong></li>
+</ul>
+</li>
+<li>
+<p>font-size — <strong>размер шрифта, кегль</strong></p>
+</li>
+<li>
+<p>font-family — <strong>семейство шрифта, гарнитура</strong></p>
+<ul>
+<li>font-family:serif — <strong>с засечками</strong></li>
+<li>font-family:sans-serif — <strong>без засечек</strong></li>
+<li>font-family:monospace — <strong>моноширинный</strong></li>
+</ul>
+</li>
+</ul>
+<h3><a id="footer_474"></a>footer</h3>
+<p><strong>подвал</strong></p>
+<ol>
+<li>характерная визуальная область в конце страницы.</li>
+<li>элемент <code>&lt;footer&gt;</code> — смысловая часть с метаинформацией.</li>
+</ol>
+<h3><a id="framework_481"></a>framework</h3>
+<p><strong>фреймво́рк,</strong> набор библиотек и компонентов для упрощения разработки. Как правило, представляет собой базовый каркас продукта. <em>Напр., <a href="http://getbootstrap.com/">Twitter Bootstrap</a>.</em></p>
+<h3><a id="frontend_485"></a>front-end</h3>
+<p><strong>фронте́нд</strong></p>
+<ol>
+<li>область технологий для разработки веб-интерфейсов, включает вспомогательные инструменты и технологии работающие в браузере или <a href="#client-side">клиентсайд</a>.</li>
+<li>внешняя часть серверной системы, отвечающая за приём данных, отправку ответов и генерацию кода для браузера, входит в <a href="#server-side">серверсайд</a>.</li>
+</ol>
+<h3><a id="full_screen_492"></a>full screen</h3>
+<p><strong>полноэкранный режим,</strong> поведение программы или её части, в котором она занимает весь экран целиком.</p>
+<h3><a id="function_496"></a>function</h3>
+<p><strong>функция</strong></p>
+<ol>
+<li>в программировании — поименованный фрагмент программного кода (подпрограмма), к которому можно обратиться из другого места программы.</li>
+<li>в CSS — может быть присутствовать в <a href="#declaration">декларации</a> на позиции значения. Напр., <code>url(img/gradient.png)</code>.</li>
+</ol>
+<h2><a id="G_503"></a>G</h2>
+<h3><a id="generated_content_505"></a>generated content</h3>
+<p><strong>сгенерированное содержимое,</strong> часть документа, созданная с помощью CSS, <a href="#pseudo-element">псевдоэлемента</a> и свойства <code>content</code>.</p>
+<h3><a id="graceful_degradation_509"></a>graceful degradation</h3>
+<p><strong>постепенная деградация</strong> — подход, при котором интерфейс сайта деградирует для старых браузеров, где не поддерживаются какие-то из используемых технологий. При этом ущерб для пользователя по возможности смягчается. Например: цвет подложки вместо градиента, растровая графика вместо векторной, проигрывание видео с помощью плагина. Встречается также более буквальный перевод <em>«изящная деградация»</em>.</p>
+<h3><a id="gradient_513"></a>gradient</h3>
+<p><strong>градие́нт,</strong> плавный переход от одного цвета к другому.</p>
+<ul>
+<li>linear gradient — <strong>линейный градиент</strong></li>
+<li>radial gradient — <strong>радиальный градиент</strong></li>
+<li>conical gradient — <strong>конический градиент</strong></li>
+</ul>
+<h3><a id="grid_521"></a>grid</h3>
+<p><strong>сетка,</strong> способ упорядочить расположение элементов в дизайне с помощью вертикального или горизонтального ритма, напр. <em>module grid — модульная сетка.</em></p>
+<h2><a id="H_525"></a>H</h2>
+<h3><a id="header_527"></a>header</h3>
+<p><strong>шапка</strong></p>
+<ol>
+<li>характерная визуальная область в начале страницы.</li>
+<li>элемент <code>&lt;header&gt;</code> — смысловая озаглавливающая часть.</li>
+</ol>
+<h3><a id="height_534"></a>height</h3>
+<p><strong>высота</strong></p>
+<h2><a id="I_538"></a>I</h2>
+<h3><a id="icon_font_540"></a>icon font</h3>
+<p><strong>иконочный шрифт,</strong> синтетический шрифт, содержащий иконки и другие плоские векторные изображения для оформления сайта, напр. <em>build an icon font — собери иконочный шрифт.</em></p>
+<h3><a id="immutable_544"></a>immutable</h3>
+<p><strong>неизменяемый,</strong> термин чаще всего применяется к данным (типам данных) в функциональном программировании.</p>
+<h3><a id="implement_548"></a>implement</h3>
+<p><strong>внедрять, реализовывать</strong> напр. <em>Firefox has implemented support of everything — Файрфокс внедрил поддержку всего.</em></p>
+<h3><a id="inline_552"></a>inline</h3>
+<ol>
+<li>
+<p><strong>строчный,</strong> имеющий строчные свойства.</p>
+<ul>
+<li>inline block — <strong>строчный блок</strong>.</li>
+<li>inline box — <strong>элемент строки</strong> в строчном форматировании: часть наполнения контейнера строки, к которой непосредственно применяются CSS-правила, напр. <em>anonymous inline box — анонимный элемент строки</em>.</li>
+<li>inline element — <strong>строчный элемент</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>встроенный,</strong> находящийся внутри строки кода.</p>
+<ul>
+<li>inline styles — <strong>встроенные стили</strong>.</li>
+<li>inline SVG — <strong>встроенный SVG</strong>.</li>
+<li>inline script — <strong>встроенный скрипт</strong>.</li>
+</ul>
+</li>
+</ol>
+<h3><a id="input_566"></a>input</h3>
+<p><strong>элемент формы,</strong> обеспечивающий взаимодействие пользователя с интерфейсом, например: текстовое поле, кнопка, переключатель.</p>
+<h3><a id="interoperability_570"></a>interoperability</h3>
+<p><strong>интероперабельность</strong></p>
+<h2><a id="K_574"></a>K</h2>
+<h3><a id="kerning_576"></a>kerning</h3>
+<p><strong>кернинг,</strong> расстояние между парами букв, учитывающее их форму для более равномерного набора.</p>
+<h3><a id="keyframe_580"></a>keyframe</h3>
+<p><strong>ключевой кадр,</strong> одна из заданных точек анимации, изменения между которыми происходят автоматически.</p>
+<h3><a id="keyframe_animation_584"></a>keyframe animation</h3>
+<p><strong>покадровая анимация,</strong> способ задания анимации в CSS с помощью ключевых кадров.</p>
+<h3><a id="keyword_588"></a>keyword</h3>
+<p><strong>ключевое слово</strong></p>
+<h2><a id="L_592"></a>L</h2>
+<h3><a id="last_call_LC_594"></a>last call (LC)</h3>
+<p><strong>последний черновик,</strong> статус спецификации <a href="#world-wide-web-consortium-w3c">W3C</a> для последних правок перед статусом <a href="#candidate-recommendation-cr">кандидата в рекомендации</a>.</p>
+<h3><a id="layout_598"></a>layout</h3>
+<p><strong>раскладка,</strong> расположение основных блоков на странице, напр. <em>3 columns layout — раскладка в 3 столбца.</em></p>
+<h3><a id="length_602"></a>length</h3>
+<p><strong>длина</strong></p>
+<h3><a id="letterspacing_606"></a>letter-spacing</h3>
+<p><strong>межбуквенное расстояние, тре́кинг,</strong> общее расстояние между буквами в тексте, отличается от <a href="#kerning">кернинга</a>.</p>
+<h3><a id="library_610"></a>library</h3>
+<p><strong>библиотека</strong>, набор готовых решений для упрощения разработки. Как правило, библиотека реализует какую-то конкретную функцию или набор связанных функций, напр., анимацию.</p>
+<h3><a id="linebox_614"></a>line-box</h3>
+<p><strong>контейнер строки</strong> в строчном форматировании: виртуальный контейнер, содержащий в себе все элементы одной строки.</p>
+<h3><a id="lineheight_618"></a>line-height</h3>
+<p><strong>высота строки, интерлинья́ж,</strong> расстояние между базовыми линиями текста.</p>
+<h3><a id="list_622"></a>list</h3>
+<p><strong>список,</strong> последовательное перечисление группы элементов.</p>
+<ul>
+<li>ordered list — <strong>упорядоченный список,</strong> отсортированный по какому-либо принципу.</li>
+<li>unordered list — <strong>неупорядоченный список,</strong> в котором порядок следования не имеет значения.</li>
+</ul>
+<h3><a id="liststyle_629"></a>list-style</h3>
+<p><strong>стиль списка</strong></p>
+<h2><a id="M_633"></a>M</h2>
+<h3><a id="margin_635"></a>margin</h3>
+<p><strong>внешний отступ,</strong> напр. <em>margin-bottom:-10px — нижний отрицательный отступ 10 пикселей.</em></p>
+<h3><a id="margin_box_639"></a>margin box</h3>
+<p><strong>внешние отступы чего-л.</strong></p>
+<h3><a id="matrix_643"></a>matrix</h3>
+<p><strong>ма́трица (трансформации),</strong> описание трансформации объекта с помощью матрицы.</p>
+<h3><a id="media_query_647"></a>media query</h3>
+<p><strong>медиавыраже́ние,</strong> объявление директивы <code>@media</code> с некими <a href="#media-query-list">условиями</a>, позволяет применять стили в зависимости от возможностей устройства. Вариант перевода «медиазапросы» менее точно отражает суть работы.</p>
+<h3><a id="media_query_list_651"></a>media query list</h3>
+<p><strong>условия медиавыражения,</strong> список условий, определяющих, в каких случаях будут применяться объявления внутри директивы <code>@media</code>. Напр., <code>only screen and (min-width: 35em)</code>.</p>
+<h3><a id="media_type_655"></a>media type</h3>
+<p><strong>тип устройства,</strong> может быть условием медиавыражения. Определяет тип устройства. Напр., <code>screen</code>.</p>
+<h3><a id="media_feature_659"></a>media feature</h3>
+<p><strong>характеристика устройства,</strong> может быть условием медиавыражения. Определяет характеристику устройства. Напр., <code>min-width</code>.</p>
+<h3><a id="mixin_663"></a>mixin</h3>
+<p><strong>при́месь,</strong> набор свойств, расширяющий поведение другой сущности, встречается в CSS-препроцессорах и паттернах JavaScript, напр. <em>mixin is clearing — примесь очищает поток.</em></p>
+<h3><a id="mock_object_667"></a>mock object</h3>
+<p><strong>фиктивный объект</strong></p>
+<h3><a id="mockup_671"></a>mock-up</h3>
+<p><strong>макет,</strong> внешний вид или дизайн сайта различной степени детализации, напр. <em>designer has sent a page mock-up — дизайнер прислал макет страницы.</em></p>
+<h3><a id="modal_675"></a>modal</h3>
+<ol>
+<li>прил. <strong>мода́льный,</strong> блокирующий интерфейс для выполнения какого-либо действия, напр. <em>modal dialog — модальный диалог.</em></li>
+<li>сущ. <strong>модальное окно (диалог),</strong> элемент интерфейса, см. <em>модальный.</em></li>
+</ol>
+<h3><a id="multiple_680"></a>multiple</h3>
+<p><strong>множественный,</strong> повторённый два и более раз, напр. <em>multiple backgrounds — множественные фоны.</em></p>
+<h3><a id="multiple_columns_684"></a>multiple columns</h3>
+<ol>
+<li><strong>мультиколо́нки,</strong> механизм из CSS, позволяющий выстроить текст в несколько колонок, напр. <em>multiple columns support in IE — поддержка мультиколонок в IE.</em> Предпочтительнее, чем громоздкие «множественные колонки».</li>
+<li><strong>многоколо́ночный,</strong> состоящий из нескольких колонок, напр. <em>multiple columns layout — многоколоночная раскладка.</em></li>
+</ol>
+<h2><a id="N_689"></a>N</h2>
+<h3><a id="nested_691"></a>nested</h3>
+<p><strong>вложенный,</strong> находящийся внутри чего-либо, напр. <em>double nesting — двойная вложенность.</em></p>
+<h3><a id="node_695"></a>node</h3>
+<p><strong>узел,</strong> элемент структуры, напр. <em>child node — дочерний узел.</em></p>
+<h3><a id="number_699"></a>number</h3>
+<p><strong>число, числовой тип</strong></p>
+<h2><a id="O_703"></a>O</h2>
+<h3><a id="opacity_705"></a>opacity</h3>
+<p><strong>непрозрачность,</strong> степень непрозрачности, напр. <em>opacity:0.1 — непрозрачность 10%.</em> Часто ошибочно называется прозрачностью.</p>
+<h3><a id="opaque_709"></a>opaque</h3>
+<p><strong>непрозрачный,</strong> степень непрозрачности, напр. <em>opaque by 75% — непрозрачен на 75%,</em> значит прозрачность 25%.</p>
+<h3><a id="outline_713"></a>outline</h3>
+<p><strong>обводка,</strong> внешний равномерный контур элемента, не участвующий в блочной модели.</p>
+<h2><a id="P_717"></a>P</h2>
+<h3><a id="package_manager_719"></a>package manager</h3>
+<p><strong>менеджер пакетов,</strong> реже <strong>диспетчер пакетов,</strong> вспомогательное ПО для управления установкой, настройкой, обновлением и удалением компонентов ПО.</p>
+<h3><a id="padding_723"></a>padding</h3>
+<p><strong>внутренний отступ,</strong> напр. <em>padding-top:10px — верхний внутренний отступ 10 пикселей.</em></p>
+<h3><a id="pagination_727"></a>pagination</h3>
+<ol>
+<li><strong>постраничная навигация,</strong> обычно список ссылок с номерами страниц, на которые разбит документ.</li>
+<li><strong>разделение на страницы,</strong> разделение документа на отдельные страницы для удобства чтения, загрузки или других целей.</li>
+</ol>
+<h3><a id="pattern_732"></a>pattern</h3>
+<p><strong>па́ттерн,</strong> формализованный подход к написанию кода, напр. <em>JavaScript patterns — паттерны JavaScript.</em></p>
+<h3><a id="parent_736"></a>parent</h3>
+<p><strong>родитель</strong></p>
+<h3><a id="percentage_740"></a>percentage</h3>
+<p><strong>процентное значение, проценты</strong></p>
+<h3><a id="performance_744"></a>performance</h3>
+<p><strong>быстродействие,</strong> характеристика скорости загрузки, отрисовки и т.п., напр. <em>CSS performance — быстродействие CSS.</em></p>
+<h3><a id="performance_budget_748"></a>performance budget</h3>
+<p><strong>бюджет на быстродействие,</strong> максимально допустимые показатели быстродействия веб-приложения. Выход за рамки такого бюджета означает спад быстродействия. Напр. <em>Performance Budget Metrics — показатели бюджета на быстродействие.</em></p>
+<h3><a id="persistent_data_structures_752"></a>persistent data structures</h3>
+<p><strong>постоянные структуры данных</strong></p>
+<h3><a id="pinch_756"></a>pinch</h3>
+<p><strong>сведение (разведение) пальцев,</strong> жест для управления сенсорным интерфейсом: сведение (в зависимости от направления — разведение) пальцев на сенсорном экране.</p>
+<h3><a id="pixel_760"></a>pixel</h3>
+<p><strong>пи́ксель,</strong> единица измерения для экранного дизайна, в мн.ч. <strong>пиксели,</strong> сокр. <strong>пк.</strong></p>
+<ul>
+<li>physical pixel — <strong>физический пиксель,</strong> ячейка на матрице, единица разрешения дисплея устройства.</li>
+<li>device independent pixel (dip) — <strong>виртуальный пиксель,</strong> независимый от устройства пиксель, может быть больше, меньше или равен физическому.</li>
+<li>bitmap pixel — <strong>растровый пиксель</strong>.</li>
+</ul>
+<h3><a id="pixel_density_768"></a>pixel density</h3>
+<p><strong>плотность пикселей,</strong> количество пикселей, которое помещается в единицу линейного размера экрана, напр. <em>pixel density of the screen is 326 ppi — плотность пикселей экрана 326 пикселей на дюйм.</em></p>
+<h3><a id="pixel_ratio_772"></a>pixel ratio</h3>
+<p><strong>пиксельное соотношение,</strong> отношение физического пикселя к виртуальному, напр. <em>screen has pixel ratio of 2 — пиксельное соотношение экрана равно 2.</em></p>
+<h3><a id="placeholder_776"></a>placeholder</h3>
+<ol>
+<li><strong>заглушка,</strong> временный заменитель картинки, текста и т.п. Напр.: <em>Вместо портрета президента вставь пока заглушку с котиками</em>.</li>
+<li><strong>подсказка поля,</strong> атрибут текстового поля, предназначен для подсказки о том, как это поле заполнять. Чаще всего представляет собой пример заполнения. Напр.: <code>placeholder=&quot;+7 (999) 123-12-13&quot;</code>.</li>
+</ol>
+<h3><a id="ppi_pixel_per_inch_781"></a>ppi (pixel per inch)</h3>
+<p><strong>пикселей на дюйм,</strong> единица измерения плотности пикселей (см. <a href="#pixel-density">pixel density</a>).</p>
+<h3><a id="plugin_785"></a>plugin</h3>
+<p><strong>TODO</strong></p>
+<h3><a id="polyfill_789"></a>polyfill</h3>
+<p><strong>полифи́л,</strong> скрипт, воссоздающий недостающую функциональность, напр. <em>new polyfill for IE6 — новый полифил для IE6.</em></p>
+<h3><a id="popup_793"></a>popup</h3>
+<p><strong>всплывающее окно, попа́п,</strong> отдельное окно или элемент интерфейса, появляющийся поверх текущего, напр. <em>annoying popup — назойливый попап.</em></p>
+<h3><a id="position_797"></a>position</h3>
+<p><strong>позиционирование</strong></p>
+<ul>
+<li>position:static — <strong>статичное</strong></li>
+<li>position:absolute — <strong>абсолютное</strong></li>
+<li>position:relative — <strong>относительное</strong></li>
+<li>position:fixed — <strong>фиксированное</strong></li>
+<li>position:sticky — <strong>закреплённое</strong></li>
+</ul>
+<h3><a id="preprocessor_807"></a>preprocessor</h3>
+<p><strong>препроце́ссор,</strong> инструмент, преобразующий код из одного синтаксиса в другой, напр. <em>Sass CSS preprocessor — CSS-препроцессор Sass.</em></p>
+<h3><a id="progress_bar_811"></a>progress bar</h3>
+<p><strong>индикатор выполнения,</strong> элемент интерфейса, отражающий прогресс выполнения операции.</p>
+<h3><a id="progressive_enhancement_815"></a>progressive enhancement</h3>
+<p><strong>прогрессивное улучшение</strong> — подход, при котором все браузеры получают одинаковую базовую функциональность, но в современных браузерах эта функциональность расширяется в соответствии с поддержкой новых технологий. Например: градиенты, векторная графика, воспроизведение видео.</p>
+<h3><a id="promises_819"></a>promises</h3>
+<p><strong>про́мисы,</strong> способ асинхронного выполнения скриптов, противопоставляется использованию обратных вызовов.</p>
+<h3><a id="property_823"></a>property</h3>
+<p><strong>свойство,</strong> напр. <em>CSS-свойство</em>.</p>
+<h3><a id="proposed_recommendation_PR_827"></a>proposed recommendation (PR)</h3>
+<p><strong>предложенная рекомендация,</strong> статус спецификации <a href="#world-wide-web-consortium-w3c">W3C</a>, вероятный кандидат в <a href="#recommendation-rec">рекомендацию</a>.</p>
+<h3><a id="pseudoelement_831"></a>pseudo-element</h3>
+<p><strong>псевдоэлемент,</strong> дополнительный внутренний элемент, созданный с помощью CSS и <code>::before</code> или <code>::after</code>.</p>
+<h3><a id="pseudoclass_835"></a>pseudo-class</h3>
+<p><strong>псевдокласс,</strong> используется для привязки декларации к определенному состоянию элемента DOM. Отделяется от селектора знаком двоеточия <code>:</code>. Напр., декларация блока правил с селектором <code>.item:hover</code> применится, когда на <code>.item</code> наведут курсор.</p>
+<h2><a id="Q_839"></a>Q</h2>
+<h3><a id="quirks_mode_841"></a>quirks mode</h3>
+<p><strong>режим совместимости,</strong> режим интерпретации и отображения страницы браузером, в котором браузер целенаправленно отходит от стандартов ради отображения документов, созданных до начала 2000-х гг. и полагавшихся на ошибки и особенности браузеров того времени. Используется для страниц без <a href="#doctype">доктайпа</a> и с устаревшими доктайпами (напр. HTML 3.2).</p>
+<h2><a id="R_845"></a>R</h2>
+<h3><a id="radio_button_847"></a>radio button</h3>
+<p><strong>радиокно́пка,</strong> элемент формы <code>&lt;input type=&quot;radio&quot;&gt;</code> для выбора одного варианта из нескольких, напр. <em>radio button is checked — радиокнопка выбрана.</em></p>
+<h3><a id="recalculate_851"></a>recalculate</h3>
+<p><strong>перерасчет</strong></p>
+<h3><a id="recommendation_REC_855"></a>recommendation (REC)</h3>
+<p><strong>рекомендация,</strong> финальный статус спецификации <a href="#world-wide-web-consortium-w3c">W3C</a>, рекомендованой для внедрения в браузеры и использования разработчиками.</p>
+<h3><a id="reflow_859"></a>reflow</h3>
+<p><strong>перекомпоновка</strong></p>
+<h3><a id="rem_863"></a>rem</h3>
+<p><strong>рем,</strong> единица измерения в CSS, которая зависит от размера шрифта корневого элемента <code>&lt;html&gt;</code>, напр. <em>font-size:3rem — размер шрифта 3 рема.</em></p>
+<h3><a id="render_867"></a>render</h3>
+<p><strong>отрисовка</strong></p>
+<h3><a id="repaint_871"></a>repaint</h3>
+<p><strong>перерисовка</strong></p>
+<h3><a id="reset_875"></a>reset</h3>
+<p><strong>сброс,</strong> обычно сброс стилей по умолчанию в CSS, напр. <em>style reset file — файл сброса стилей.</em></p>
+<h3><a id="resolution_879"></a>resolution</h3>
+<p><strong>разрешение,</strong> количество физических пикселей на экране устройства, напр. <em>screen resolution is 1024×768 pixels — разрешение экрана 1024×768 пикселей.</em></p>
+<h3><a id="responsive_design_883"></a>responsive design</h3>
+<p><strong>отзывчивый дизайн,</strong> один из технологических методов создания <a href="#adaptive-design">адаптивного дизайна</a>.</p>
+<h3><a id="Responsive_Images_Community_Group_RICG_887"></a>Responsive Images Community Group (RICG)</h3>
+<p><strong>Общественная группа по адаптивным изображениям</strong></p>
+<h3><a id="root_891"></a>root</h3>
+<p><strong>корень</strong></p>
+<h3><a id="rounder_corners_895"></a>rounder corners</h3>
+<p><strong>скруглённые углы,</strong> напр. <em>rounded corners are out of fashion — скруглённые углы вышли из моды,</em> см. также <a href="#border-radius">скругление рамки</a>.</p>
+<h3><a id="row_899"></a>row</h3>
+<p><strong>строка, ряд</strong></p>
+<ul>
+<li>горизонтальная область в таблице или раскладке.</li>
+<li>элемент таблицы <code>&lt;tr&gt;</code>.</li>
+</ul>
+<h3><a id="rowspan_906"></a>rowspan</h3>
+<p><strong>объединение строк,</strong> HTML-атрибут для объединения нескольких ячеек таблицы в одном столбце.</p>
+<h3><a id="ruleset_910"></a>rule-set</h3>
+<p><strong>блок стилей элемента</strong>, состоит из селектора (или медиавыражения) и блока деклараций.</p>
+<h2><a id="S_914"></a>S</h2>
+<h3><a id="shallow_comparison_916"></a>shallow comparison</h3>
+<p><strong>поверхностное сравнение,</strong> сравнение, при котором проверяется ссылаются ли две переменные на один и тот же объект в памяти.</p>
+<h3><a id="scaffolding_920"></a>scaffolding</h3>
+<p><strong>скафо́лдинг,</strong> автоматическая генерация кода по описанию, метод метапрограммирования.</p>
+<h3><a id="scale_924"></a>scale</h3>
+<ol>
+<li>сущ. <strong>масштаб</strong></li>
+<li>гл. <strong>масштабировать</strong></li>
+</ol>
+<h3><a id="scope_929"></a>scope</h3>
+<p><strong>область видимости,</strong> ограниченная часть программной структуры, в которой доступна объявленная переменная, либо применяются <code>&lt;style scoped&gt;</code> стили.</p>
+<h3><a id="script_933"></a>script</h3>
+<p><strong>скрипт,</strong> инструкции, описывающие поведение страниц, напр. <em>scripts are not loaded yet — скрипты пока не подгрузились.</em></p>
+<h3><a id="scroll_937"></a>scroll</h3>
+<ol>
+<li><strong>прокрутка,</strong> элемент интерфейса для перемещения скрытой части страницы или блока, является признаком того, что вложенный элемент больше родительского, напр. <em>horizontal scroll is disabled — горизонтальная прокрутка запрещена.</em></li>
+<li><strong>прокручивать,</strong> перемещать скрытую часть страницы или блока.</li>
+</ol>
+<h3><a id="scrollbar_942"></a>scrollbar</h3>
+<p><strong>полоса прокрутки,</strong> формальное название <a href="#scroll">прокрутки</a>, напр. <em>system scrollbars — системные полосы прокрутки.</em></p>
+<h3><a id="sectioning_roots_946"></a>sectioning roots</h3>
+<p><strong>структурные основы</strong></p>
+<h3><a id="semantics_950"></a>semantics</h3>
+<p><strong>семантика,</strong> смысловая нагрузка HTML-элементов, напр. <em>semantic coding — семантическая вёрстка.</em></p>
+<h3><a id="selector_954"></a>selector</h3>
+<p><strong>селектор,</strong> необходимая структурная часть <a href="#rule-set">блока стилей</a>. Отвечает за привязку деклараций к элементам DOM.</p>
+<ul>
+<li>simple selector — <strong>простой селектор,</strong> может быть <a href="#pseudo-class">псевдоклассом</a> или одним из следующих типов:
+<ul>
+<li>type selector — <strong>селектор по типу,</strong> обращается к тегу, напр. <code>ul</code>, <code>input</code> и др.</li>
+<li>universal selector — <strong>универсальный селектор,</strong> «звездочка»: <code>*</code>.</li>
+<li>ID selector — <strong>селектор по идентификатору,</strong> напр. <code>#content</code>.</li>
+<li>class selector — <strong>селектор по классу,</strong> напр. <code>.item</code>.</li>
+<li>attribute selector — <strong>селектор по атрибуту,</strong> напр. <code>[type=submit]</code>.</li>
+</ul>
+</li>
+<li>compound selector (др. sequence of simple selectors) — <strong>составной селектор</strong>, цепочка простых селекторов, не разделенных комбинаторами, напр. <code>input[type=submit]:focus</code>.</li>
+<li>complex selector — <strong>сложный селектор</strong>, несколько простых и/или составных селекторов, разделенных комбинаторами:
+<ul>
+<li>descendant selector — <strong>селектор потомка</strong>, напр. <code>ul li</code>.</li>
+<li>child selector — <strong>селектор непосредственного потомка</strong>, напр. <code>#buttons &gt; *</code>. Также часто называется <strong>дочерним</strong>.</li>
+<li>adjacent sibling selector — <strong>селектор непосредственного соседства</strong>, напр. <code>.item + .item</code>. Также часто называется <strong>соседским</strong>.</li>
+<li>general sibling selector — <strong>селектор соседства</strong>, напр. <code>.item ~ .item</code>.</li>
+</ul>
+</li>
+</ul>
+<h3><a id="serverside_971"></a>server-side</h3>
+<p><strong>серверсайд,</strong> область технологий, работающих на сервере, часто синоним <a href="#back-end">бэкенда</a>.</p>
+<h3><a id="shadow_DOM_975"></a>shadow DOM</h3>
+<p><strong>теневой DOM, теневая модель документа</strong></p>
+<h3><a id="shapes_979"></a>shapes</h3>
+<p><strong>фигуры, CSS-фигуры</strong></p>
+<h3><a id="shim_983"></a>shim</h3>
+<p><strong>шим,</strong> код, помогающий унифицировать работу с браузерами, обычно реализует недостающую или нормализует существующую поддержку, напр. <em>HTML5 shim for IE8 — HTML5-шим для IE8.</em></p>
+<h3><a id="sibling_987"></a>sibling</h3>
+<p><strong>сосед</strong> (в знач. «соседний элемент»).</p>
+<h3><a id="sidebar_991"></a>sidebar</h3>
+<p><strong>боковая панель,</strong> боковая часть сайта со второстепенным содержимым, напр. <em>sidebar is on the right side — справа находится боковая панель.</em></p>
+<h3><a id="skew_995"></a>skew</h3>
+<ol>
+<li>сущ. <strong>наклон</strong></li>
+<li>гл. <strong>наклонять</strong></li>
+</ol>
+<h3><a id="source_maps_1000"></a>source maps</h3>
+<p><strong>карты кода,</strong> специальная разметка, позволяющая привести в соответствие исходные файлы и скомпилированный код для отладки.</p>
+<h3><a id="specification_spec_1004"></a>specification, spec</h3>
+<p><strong>спецификация,</strong> документация по технологии для разработчиков и производителей браузеров, обычно в одном из статусов: от предложенной до утверждённой W3C, напр. <em>specification draft — черновик спецификации.</em></p>
+<h3><a id="staging_server_1008"></a>staging server</h3>
+<p><strong>отладочный сервер,</strong> сервер, на котором продукт проходит тестирование и отладку.</p>
+<h3><a id="standards_mode_standards_compliance_mode_1012"></a>standards mode, standards compliance mode</h3>
+<p><strong>стандартный режим,</strong> режим интерпретации и отображения страницы браузером, в котором браузер обязан максимально полно соблюдать стандарты, насколько может. Используется для страниц с более-менее современными <a href="#doctype">доктайпами</a>, напр. доктайпом HTML5.</p>
+<h3><a id="statement_1016"></a>statement</h3>
+<p><strong>объявление</strong>, структурный элемент CSS. Это может быть блок стилей элемента, директива импорта, медиавыражение и т.д.</p>
+<h3><a id="string_1020"></a>string</h3>
+<ol>
+<li><strong>строковый тип,</strong> в программировании — тип данных, значениями которого является произвольная последовательность (строка) символов алфавита.</li>
+<li><strong>строка,</strong> в CSS — строковое значение директивы или свойства. Напр., в <code>content: &quot;\201d&quot;</code> строкой является <code>&quot;\201d&quot;</code>.</li>
+</ol>
+<h3><a id="stub_object_1025"></a>stub object</h3>
+<p><strong>заглушка</strong></p>
+<h3><a id="style_1029"></a>style</h3>
+<ol>
+<li>сущ. <strong>стили,</strong> напр. <em>apply styles to an element — применить стили к элементу,</em> мн.ч. предпочтительнее: <em>стили элемента,</em> а не <em>стиль элемента</em> (неправильно).</li>
+<li>гл. <strong>оформлять,</strong> напр. <em>how to style selects — как оформить селекты,</em> предпочтительнее, чем двусмысленное «стилизовать».</li>
+</ol>
+<h3><a id="style_guide_1034"></a>style guide</h3>
+<p><strong>руководство по стилю,</strong> напр. <em>project code style guide — руководство по стилю кода проекта</em>.</p>
+<h3><a id="stylesheet_1038"></a>stylesheet</h3>
+<p><strong>таблица стилей,</strong> напр. <em>таблица стилей документа</em>.</p>
+<h3><a id="swipe_1042"></a>swipe</h3>
+<p><strong>смахивание,</strong> жест для управления сенсорным интерфейсом: смахивающее движение пальцев по сенсорному экрану.</p>
+<h3><a id="submit_1046"></a>submit</h3>
+<p><strong>отправка,</strong> напр. <em>отправка формы</em>.</p>
+<h2><a id="T_1050"></a>T</h2>
+<h3><a id="tab_1052"></a>tab</h3>
+<ol>
+<li><strong>вкладка,</strong> один из слоёв интерфейса сайта или программы, который активируется выбором его заголовка, напр. <em>open in new tab — открыть в новой вкладке.</em></li>
+<li><strong>таб,</strong> клавиша табуляции, вставляет символ табуляции, переключает фокус на следующий элемент интерфейса, либо дополняет частично набранное слово, напр. <em>press Ctrl Tab — нажмите контрол-таб.</em></li>
+<li><strong>таб,</strong> символ табуляции, имеет настраиваемую ширину и используется для отступов в коде, напр. <em>tabs are better than spaces — табы лучше пробелов.</em></li>
+</ol>
+<h3><a id="tag_1058"></a>tag</h3>
+<ol>
+<li><strong>тег,</strong> обозначение элемента в HTML, существуют открывающие, закрывающие и одиночные теги. Напр. <em>закрывающий тег отсутствует — closing tag is missing.</em>
+<ul>
+<li>tag name — <strong>название тега</strong></li>
+<li>start tag — <strong>открывающий тег</strong></li>
+<li>end tag — <strong>закрывающий тег</strong></li>
+</ul>
+</li>
+<li><strong>метка,</strong> маркер содержимого, обычно короткое слово.</li>
+</ol>
+<h3><a id="tap_1066"></a>tap</h3>
+<p><strong>нажатие,</strong> жест для управления сенсорным интерфейсом: однократное касание сенсорного экрана.</p>
+<h3><a id="text_1070"></a>text</h3>
+<p><strong>текст</strong></p>
+<h3><a id="textarea_1074"></a>textarea</h3>
+<p><strong>текстовая область,</strong> элемент формы для ввода многострочного текста.</p>
+<h3><a id="textalign_1078"></a>text-align</h3>
+<p><strong>выравнивание, вы́ключка,</strong> ориентация строк текста в определённом направлении, либо равномерно по ширине блока.</p>
+<ul>
+<li>text-align:left — <strong>влево</strong></li>
+<li>text-align:right — <strong>вправо</strong></li>
+<li>text-align:justify — <strong>по ширине</strong></li>
+</ul>
+<h3><a id="textshadow_1086"></a>text-shadow</h3>
+<p><strong>тень (текста),</strong> напр. <em>text-shadow is red — тень текста красная.</em></p>
+<h3><a id="thumb_1090"></a>thumb</h3>
+<ol>
+<li>Сокращение от <a href="#thumbnail">thumbnail</a>.</li>
+<li><strong>ползунок,</strong> элемент управления <a href="#scrollbar">полосой прокрутки</a>.</li>
+</ol>
+<h3><a id="thumbnail_1095"></a>thumbnail</h3>
+<p><strong>миниатюра,</strong> уменьшенная копия изображения.</p>
+<h3><a id="title_1099"></a>title</h3>
+<ol>
+<li><strong>заголовок,</strong> если речь идёт об элементе <code>&lt;title&gt;</code>, либо о заглавии элемента.</li>
+<li><strong>подсказка,</strong> если речь идёт об атрибуте <code>title=&quot;&quot;</code>.</li>
+</ol>
+<h3><a id="toggle_1104"></a>toggle</h3>
+<p><strong>переключать,</strong> переводить из одного состояния в другое, <em>переключить классы — toggle classes.</em></p>
+<h3><a id="tooltip_1108"></a>tooltip</h3>
+<p><strong>всплывающая подсказка,</strong> вспомогательная информация, появляющаяся при наведении на элемент или при его активации, в частности <code>title=&quot;&quot;</code>.</p>
+<h3><a id="touch_interface_1112"></a>touch interface</h3>
+<p><strong>сенсорный интерфейс</strong></p>
+<h3><a id="transform_1116"></a>transform</h3>
+<p><strong>трансформация,</strong> напр. <em>transform:scale(2) — трансформация масштабированием в 2 раза.</em></p>
+<h3><a id="transition_1120"></a>transition</h3>
+<p><strong>переход,</strong> напр. <em>transition:all 2s linear — линейный переход длительностью 2 секунды.</em></p>
+<h3><a id="translate_1124"></a>translate</h3>
+<p><strong>перемещать,</strong> перемещение объекта с помощью CSS-трансформации, напр. <em>translate(x, y) — перемещение на X и Y.</em></p>
+<h3><a id="transpiler_1128"></a>transpiler</h3>
+<p><strong>транспилер,</strong> компилятор, преобразующий исходный код на одном яз. программирования в исходный код на другом яз. программирования.</p>
+<h3><a id="typography_1132"></a>typography</h3>
+<p><strong>типографика,</strong> оформление текста с помощью выбора гарнитуры, параметров строки и других.</p>
+<h2><a id="U_1136"></a>U</h2>
+<h3><a id="unit_1138"></a>unit</h3>
+<p><strong>единица изменения,</strong> напр. <em>rem unit — единица измерения «рем».</em></p>
+<h3><a id="unit_testing_1142"></a>unit testing</h3>
+<p><strong>модульное тестирование</strong></p>
+<h3><a id="URI_1146"></a>URI</h3>
+<p><strong>унифицированный идентификатор ресурса,</strong> последовательность символов, идентифицирующая абстрактный или физический ресурс.</p>
+<h3><a id="URL_1150"></a>URL</h3>
+<ol>
+<li>
+<p><em>разг.</em> <strong>адрес</strong>. Значение рекомендовано к использованию при переводах статей.</p>
+</li>
+<li>
+<p><strong>унифицированный указатель ресурса,</strong> <a href="#URI">URI</a>, который предоставляет ещё и информацию о местонахождении этого ресурса, напр. <em>background: url(&quot;<a href="http://www.example.com/picture.png">http://www.example.com/picture.png</a>&quot;)</em></p>
+</li>
+</ol>
+<h3><a id="user_experience_UX_1156"></a>user experience (UX)</h3>
+<p><strong>пользовательский опыт,</strong> совокупность ощущений от взаимодействия с чем-л. (интерфейсом, девайсом, продуктом). В контексте области знаний рекомендуется употреблять аббревиатуру UX (напр., <em>UX-специалист</em>).</p>
+<h3><a id="user_interface_UI_1160"></a>user interface (UI)</h3>
+<p><strong>пользовательский интерфейс,</strong> в прозрачном контексте рекомендуется употреблять просто «интерфейс».</p>
+<h3><a id="utility_1164"></a>utility</h3>
+<p><strong>утили́та,</strong> программа с узким назначением.</p>
+<h2><a id="V_1168"></a>V</h2>
+<h3><a id="valid_1170"></a>valid</h3>
+<p><strong>валидный,</strong> соотвествующий стандарту, спецификации или другому нормативу, напр. <em>valid markup — валидная разметка</em>.</p>
+<h3><a id="validator_1174"></a>validator</h3>
+<p><strong>валидатор,</strong> средство проверки соответствия стандарту, спецификации или другому нормативу (см. <a href="#valid">valid</a>), напр. <em>W3C markup validator — валидатор разметки W3C</em>.</p>
+<h3><a id="value_1178"></a>value</h3>
+<p><strong>значение,</strong> напр. <em>значение CSS-свойства</em>.</p>
+<h3><a id="vendor_prefix_1182"></a>vendor prefix</h3>
+<p><strong>бра́узерный пре́фикс,</strong> приставка к CSS-свойству <code>-webkit-</code> или <code>-moz-</code>, напр. <em>add vendor prefixes — добавьте браузерные префиксы.</em></p>
+<h3><a id="verticalalign_1186"></a>vertical-align</h3>
+<p><strong>вертикальное выравнивание,</strong> расположение элементов по вертикали в пределах строки текста или таблицы.</p>
+<h3><a id="viewport_1190"></a>viewport</h3>
+<p><strong>вьюпо́рт</strong></p>
+<ol>
+<li>видимая область документа в рамках экрана.</li>
+<li>элемент <code>&lt;meta name=&quot;viewport&quot;&gt;</code>, управляющий адаптацией страниц на мобильных устройствах.</li>
+</ol>
+<h2><a id="W_1197"></a>W</h2>
+<h3><a id="website_web_site_1199"></a>website, web site</h3>
+<p><strong>сайт,</strong> объединённые под одним адресом страницы, перевод «веб-сайт» избыточен.</p>
+<h3><a id="working_draft_WD_1203"></a>working draft (WD)</h3>
+<p><strong>рабочий черновик,</strong> ранний статус спецификации <a href="#world-wide-web-consortium-w3c">W3C</a>.</p>
+<h3><a id="World_Wide_Web_Consortium_W3C_1207"></a>World Wide Web Consortium (W3C)</h3>
+<p><strong>Консорциум всемирной сети,</strong> организация, разрабатывающая веб-стандарты. Переводить «web» как «паутину» в XXI веке уже смешно.</p>
+<h3><a id="web_standards_1211"></a>web standards</h3>
+<p><strong>веб-стандарты</strong></p>
+<h3><a id="width_1215"></a>width</h3>
+<p><strong>ширина</strong></p>
+<h3><a id="wordspacing_1219"></a>word-spacing</h3>
+<p><strong>межсловный пробел</strong></p>
+<h3><a id="workaround_1223"></a>workaround</h3>
+<p><strong>обходное решение (приём),</strong> способ решения задачи в ограниченных условиях, напр. <em>to figure out workaround — придумать обходной приём.</em></p>
+<hr>
+<p><a href="https://github.com/web-standards-ru/dictionary/graphs/contributors">Авторы</a>, редакторы <a href="http://pepelsbey.net">Вадим Макеев</a> и <a href="http://engelside.net/portfolio/">Ольга Алексашенко</a>. Распространяется по лицензии <a href="LICENSE.md">CC-BY-SA 4.0</a>.</p>
+
+</body></html>
